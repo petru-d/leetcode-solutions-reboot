@@ -65,7 +65,7 @@ namespace p68
 
             // distribute the left-overs to the big gaps, one each
             size_t number_of_big_gaps = spaces % total_gaps;
-            size_t number_of_small_gaps = total_gaps - number_of_big_gaps;
+            // size_t number_of_small_gaps = total_gaps - number_of_big_gaps;
 
             string result = words[word_indices[0]];
 

@@ -5,5 +5,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="p68.h" />
+    <ClInclude Include="p61.h" />
   </ItemGroup>
 </Project>
