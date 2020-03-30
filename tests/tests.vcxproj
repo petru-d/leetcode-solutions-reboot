@@ -38,6 +38,7 @@
   <ItemGroup>
     <ClCompile Include="p61.cpp" />
     <ClCompile Include="p68.cpp" />
+    <ClCompile Include="p69.cpp" />
     <ClCompile Include="p88.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
