@@ -7,5 +7,6 @@
     <ClInclude Include="p68.h" />
     <ClInclude Include="p61.h" />
     <ClInclude Include="p69.h" />
+    <ClInclude Include="p367.h" />
   </ItemGroup>
 </Project>
