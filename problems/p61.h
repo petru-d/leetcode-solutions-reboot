@@ -1,16 +1,8 @@
 #pragma once
+#include "util_linked_list.h"
 
 namespace p61
 {
-    struct ListNode
-    {
-        int val;
-        ListNode* next;
-        ListNode(int x) : val(x), next(nullptr)
-        {
-        }
-    };
-
     class Solution
     {
       public:

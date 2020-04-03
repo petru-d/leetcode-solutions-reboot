@@ -149,7 +149,9 @@
     <ClInclude Include="p68.h" />
     <ClInclude Include="p69.h" />
     <ClInclude Include="p76.h" />
+    <ClInclude Include="p83.h" />
     <ClInclude Include="p93.h" />
+    <ClInclude Include="util_linked_list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
