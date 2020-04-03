@@ -4,16 +4,15 @@
 #include <string>
 #include <vector>
 
-using namespace std;
 namespace p68
 {
     class Solution
     {
       public:
-        vector<string> fullJustify(vector<string>& words, int maxWidth)
+        std::vector<std::string> fullJustify(std::vector<std::string>& words, int maxWidth)
         {
             // gather the indices of words that will fit in each row.
-            vector<vector<size_t>> split_words = {{0}};
+            std::vector<std::vector<size_t>> split_words = {{0}};
 
             // size filled in the current row
             size_t last_row_filled = words[0].size();
@@ -33,7 +32,7 @@ namespace p68
                 }
             }
 
-            vector<string> result;
+            std::vector<std::string> result;
 
             // Split_words should now contain references to the words that should fit on each row.
             // Justify.
@@ -47,7 +46,7 @@ namespace p68
         }
 
       private:
-        string justify_center(const vector<string>& words, const vector<size_t>& word_indices, int maxWidth)
+        std::string justify_center(const std::vector<std::string>& words, const std::vector<size_t>& word_indices, int maxWidth)
         {
             if (word_indices.size() <= 1)
                 return justify_left(words, word_indices, maxWidth);
@@ -67,7 +66,7 @@ namespace p68
             size_t number_of_big_gaps = spaces % total_gaps;
             // size_t number_of_small_gaps = total_gaps - number_of_big_gaps;
 
-            string result = words[word_indices[0]];
+            std::string result = words[word_indices[0]];
 
             for (size_t i = 1; i < word_indices.size(); ++i)
             {
@@ -79,9 +78,9 @@ namespace p68
             return result;
         }
 
-        string justify_left(const vector<string>& words, const vector<size_t>& word_indices, int maxWidth)
+        std::string justify_left(const std::vector<std::string>& words, const std::vector<size_t>& word_indices, int maxWidth)
         {
-            string result = words[word_indices[0]];
+            std::string result = words[word_indices[0]];
             for (size_t w = 1; w < word_indices.size(); ++w)
             {
                 result += " " + words[word_indices[w]];

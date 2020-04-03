@@ -3,14 +3,12 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 namespace p93
 {
     class Solution
     {
       public:
-        vector<string> restoreIpAddresses(string s)
+        std::vector<std::string> restoreIpAddresses(std::string s)
         {
             if (s.size() < 4 || s.size() > 12)
                 return {};
@@ -21,14 +19,14 @@ namespace p93
             //  0 <= s[p1 .. p2) < 256
             //  0 <= s[p2 .. p3) < 256
             //  0 <= s[p3 .. s.size()) < 256
-            vector<size_t> currSol = {1};
+            std::vector<size_t> currSol = {1};
             backtrack(s, currSol);
 
             return _solutions;
         }
 
       private:
-        void backtrack(const string& s, vector<size_t>& currSol)
+        void backtrack(const std::string& s, std::vector<size_t>& currSol)
         {
             if (currSol.size() == 3 || !viable(s, currSol))
             {
@@ -59,7 +57,7 @@ namespace p93
             }
         }
 
-        bool viable(const string& s, const vector<size_t>& currSol)
+        bool viable(const std::string& s, const std::vector<size_t>& currSol)
         {
             if (currSol.size() == 1)
             {
@@ -84,7 +82,7 @@ namespace p93
             return false;
         }
 
-        bool solution(const string& s, const vector<size_t>& currSol)
+        bool solution(const std::string& s, const std::vector<size_t>& currSol)
         {
             if (currSol.size() == 3)
             {
@@ -101,7 +99,7 @@ namespace p93
             return false;
         }
 
-        bool good_block(const string& s, size_t l, size_t r)
+        bool good_block(const std::string& s, size_t l, size_t r)
         {
             // The only allowed block that starts with '0' is '0'. No '01', '001' etc.
             if (s[l] == '0')
@@ -116,7 +114,7 @@ namespace p93
             return result < 256;
         }
 
-        void log_solution(const string& s, const vector<size_t>& solution)
+        void log_solution(const std::string& s, const std::vector<size_t>& solution)
         {
             auto sol = s.substr(0, solution[0]) + ".";
             sol += s.substr(solution[0], solution[1] - solution[0]) + ".";
@@ -126,6 +124,6 @@ namespace p93
             _solutions.emplace_back(sol);
         }
 
-        vector<string> _solutions;
+        std::vector<std::string> _solutions;
     };
 }

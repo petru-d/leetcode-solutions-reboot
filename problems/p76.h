@@ -3,14 +3,12 @@
 #include <array>
 #include <string>
 
-using namespace std;
-
 namespace p76
 {
     class Solution
     {
       public:
-        string minWindow(string s, string t)
+        std::string minWindow(std::string s, std::string t)
         {
             // sliding window
             // - while t is not satisfied, increase right (when satisfied, register solution candidate)
@@ -57,7 +55,7 @@ namespace p76
                 return false;
             };
 
-            string solution;
+            std::string solution;
 
             size_t left = 0;
             size_t right = 0;
@@ -82,7 +80,7 @@ namespace p76
                     }
                 }
             }
-            // If we consumed the whole string and t is still not satisfied, there is no solution.
+            // If we consumed the whole std::string and t is still not satisfied, there is no solution.
             if (solution.empty())
                 return solution;
 

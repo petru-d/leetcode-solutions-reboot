@@ -3,16 +3,14 @@
 #include <unordered_map>
 #include <vector>
 
-using namespace std;
-
 namespace code_chall_1_p1
 {
     class Solution
     {
       public:
-        int singleNumber(vector<int>& nums)
+        int singleNumber(std::vector<int>& nums)
         {
-            unordered_map<int, bool> pairs;
+            std::unordered_map<int, bool> pairs;
 
             for (auto n : nums)
             {
@@ -30,7 +28,7 @@ namespace code_chall_1_p1
     class Solution_stolen
     {
       public:
-        int singleNumber(vector<int>& nums)
+        int singleNumber(std::vector<int>& nums)
         {
             auto res = nums[0];
             auto N = nums.size();
