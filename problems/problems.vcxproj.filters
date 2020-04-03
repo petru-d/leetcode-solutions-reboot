@@ -9,5 +9,8 @@
     <ClInclude Include="p69.h" />
     <ClInclude Include="p367.h" />
     <ClInclude Include="p93.h" />
+    <ClInclude Include="p76.h" />
+    <ClInclude Include="p136.h" />
+    <ClInclude Include="p202.h" />
   </ItemGroup>
 </Project>

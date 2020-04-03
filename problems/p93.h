@@ -57,7 +57,6 @@ namespace p93
                 currSol.push_back(1 + currSol.back());
                 return backtrack(s, currSol);
             }
-            7
         }
 
         bool viable(const string& s, const vector<size_t>& currSol)
