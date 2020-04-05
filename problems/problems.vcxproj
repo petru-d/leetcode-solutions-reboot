@@ -142,8 +142,10 @@
     <ClCompile Include="p88.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="p122.h" />
     <ClInclude Include="p136.h" />
     <ClInclude Include="p202.h" />
+    <ClInclude Include="p283.h" />
     <ClInclude Include="p367.h" />
     <ClInclude Include="p61.h" />
     <ClInclude Include="p68.h" />
