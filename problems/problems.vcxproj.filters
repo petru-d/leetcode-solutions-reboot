@@ -16,5 +16,6 @@
     <ClInclude Include="util_linked_list.h" />
     <ClInclude Include="p283.h" />
     <ClInclude Include="p122.h" />
+    <ClInclude Include="p47.h" />
   </ItemGroup>
 </Project>
