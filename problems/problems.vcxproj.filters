@@ -17,5 +17,7 @@
     <ClInclude Include="p283.h" />
     <ClInclude Include="p122.h" />
     <ClInclude Include="p47.h" />
+    <ClInclude Include="p49.h" />
+    <ClInclude Include="challenge_7apr2020.h" />
   </ItemGroup>
 </Project>
