@@ -145,6 +145,7 @@
     <ClInclude Include="challenge_7apr2020.h" />
     <ClInclude Include="p122.h" />
     <ClInclude Include="p136.h" />
+    <ClInclude Include="p171.h" />
     <ClInclude Include="p202.h" />
     <ClInclude Include="p155.h" />
     <ClInclude Include="p283.h" />

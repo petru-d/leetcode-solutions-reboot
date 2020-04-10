@@ -40,6 +40,7 @@
     <ClCompile Include="p122.cpp" />
     <ClCompile Include="p136.cpp" />
     <ClCompile Include="p155.cpp" />
+    <ClCompile Include="p171.cpp" />
     <ClCompile Include="p202.cpp" />
     <ClCompile Include="p283.cpp" />
     <ClCompile Include="p367.cpp" />
