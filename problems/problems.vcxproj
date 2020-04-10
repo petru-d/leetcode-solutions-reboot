@@ -152,6 +152,7 @@
     <ClInclude Include="p367.h" />
     <ClInclude Include="p47.h" />
     <ClInclude Include="p49.h" />
+    <ClInclude Include="p556.h" />
     <ClInclude Include="p61.h" />
     <ClInclude Include="p68.h" />
     <ClInclude Include="p69.h" />

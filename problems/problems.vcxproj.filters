@@ -24,5 +24,6 @@
     <ClInclude Include="p844.h" />
     <ClInclude Include="p155.h" />
     <ClInclude Include="p171.h" />
+    <ClInclude Include="p556.h" />
   </ItemGroup>
 </Project>
