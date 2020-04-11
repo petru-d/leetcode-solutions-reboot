@@ -27,5 +27,6 @@
     <ClInclude Include="p556.h" />
     <ClInclude Include="p543.h" />
     <ClInclude Include="binary_tree_util.h" />
+    <ClInclude Include="p1343.h" />
   </ItemGroup>
 </Project>

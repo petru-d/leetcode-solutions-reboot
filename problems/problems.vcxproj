@@ -145,6 +145,7 @@
     <ClInclude Include="binary_tree_util.h" />
     <ClInclude Include="challenge_7apr2020.h" />
     <ClInclude Include="p122.h" />
+    <ClInclude Include="p1343.h" />
     <ClInclude Include="p136.h" />
     <ClInclude Include="p171.h" />
     <ClInclude Include="p202.h" />
