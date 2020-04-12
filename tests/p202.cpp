@@ -2,7 +2,7 @@
 
 #include "../problems/p202.h"
 
-TEST(P202, T0)
+TEST(p202, t0)
 {
     p202::Solution s;
 
@@ -11,7 +11,7 @@ TEST(P202, T0)
     EXPECT_EQ(happy, true);
 }
 
-TEST(P202, T1)
+TEST(p202, t1)
 {
     p202::Solution s;
 
@@ -20,7 +20,7 @@ TEST(P202, T1)
     EXPECT_EQ(happy, true);
 }
 
-TEST(P202, T2)
+TEST(p202, t2)
 {
     p202::Solution s;
 
@@ -29,7 +29,7 @@ TEST(P202, T2)
     EXPECT_EQ(happy, true);
 }
 
-TEST(P202, T3)
+TEST(p202, t3)
 {
     p202::Solution s;
 

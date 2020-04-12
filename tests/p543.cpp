@@ -2,7 +2,7 @@
 
 #include "../problems/p543.h"
 
-TEST(P543, T0)
+TEST(p543, t0)
 {
     p543::Solution s;
 
@@ -15,7 +15,7 @@ TEST(P543, T0)
     EXPECT_EQ(s.diameterOfBinaryTree(t1), 3);
 }
 
-TEST(P543, T1)
+TEST(p543, t1)
 {
     p543::Solution s;
 

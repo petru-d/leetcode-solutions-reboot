@@ -2,7 +2,7 @@
 
 #include "../problems/p367.h"
 
-TEST(P367, T0)
+TEST(p367, t0)
 {
     p367::Solution s;
     auto result = s.isPerfectSquare(4);
@@ -10,7 +10,7 @@ TEST(P367, T0)
     EXPECT_EQ(result, true);
 }
 
-TEST(P367, T1)
+TEST(p367, t1)
 {
     p367::Solution s;
     auto result = s.isPerfectSquare(16);
@@ -18,7 +18,7 @@ TEST(P367, T1)
     EXPECT_EQ(result, true);
 }
 
-TEST(P367, T2)
+TEST(p367, t2)
 {
     p367::Solution s;
     auto result = s.isPerfectSquare(14);
@@ -26,7 +26,7 @@ TEST(P367, T2)
     EXPECT_EQ(result, false);
 }
 
-TEST(P367, T3)
+TEST(p367, t3)
 {
     p367::Solution s;
     auto result = s.isPerfectSquare(2147483647);
@@ -34,7 +34,7 @@ TEST(P367, T3)
     EXPECT_EQ(result, false);
 }
 
-TEST(P367, T4)
+TEST(p367, t4)
 {
     p367::Solution s;
     auto result = s.isPerfectSquare(2);
@@ -42,7 +42,7 @@ TEST(P367, T4)
     EXPECT_EQ(result, false);
 }
 
-TEST(P367, T5)
+TEST(p367, t5)
 {
     p367::Solution s;
     auto result = s.isPerfectSquare(2147395600);

@@ -2,7 +2,7 @@
 
 #include "../problems/p876.h"
 
-TEST(P876, T0)
+TEST(p876, t0)
 {
     p876::Solution s;
 
@@ -13,7 +13,7 @@ TEST(P876, T0)
     EXPECT_EQ(true, eq_lists(result, expected));
 }
 
-TEST(P876, T1)
+TEST(p876, t1)
 {
     p876::Solution s;
 
@@ -24,7 +24,7 @@ TEST(P876, T1)
     EXPECT_EQ(true, eq_lists(result, expected));
 }
 
-TEST(P876, T2)
+TEST(p876, t2)
 {
     p876::Solution s;
 

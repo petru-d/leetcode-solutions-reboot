@@ -2,7 +2,7 @@
 
 #include "../problems/p93.h"
 
-TEST(P93, T0)
+TEST(p93, t0)
 {
     p93::Solution s;
     auto result = s.restoreIpAddresses("25525511135");
@@ -11,7 +11,7 @@ TEST(P93, T0)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P93, T1)
+TEST(p93, t1)
 {
 
     p93::Solution s;
@@ -21,7 +21,7 @@ TEST(P93, T1)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P93, T2)
+TEST(p93, t2)
 {
 
     p93::Solution s;
@@ -31,7 +31,7 @@ TEST(P93, T2)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P93, T3)
+TEST(p93, t3)
 {
 
     p93::Solution s;
@@ -41,7 +41,7 @@ TEST(P93, T3)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P93, T4)
+TEST(p93, t4)
 {
 
     p93::Solution s;
@@ -51,7 +51,7 @@ TEST(P93, T4)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P93, T5)
+TEST(p93, t5)
 {
 
     p93::Solution s;

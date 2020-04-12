@@ -2,7 +2,7 @@
 
 #include "../problems/p68.h"
 
-TEST(P68, T0)
+TEST(p68, t0)
 {
     std::vector<std::string> words = {"This", "is", "an", "example", "of", "text", "justification."};
 
@@ -13,7 +13,7 @@ TEST(P68, T0)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P68, T1)
+TEST(p68, t1)
 {
     std::vector<std::string> words = {"What", "must", "be", "acknowledgment", "shall", "be"};
 
@@ -24,7 +24,7 @@ TEST(P68, T1)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P68, T2)
+TEST(p68, t2)
 {
     std::vector<std::string> words = {"Science", "is", "what",      "we",  "understand", "well",       "enough", "to", "explain",
                                       "to",      "a",  "computer.", "Art", "is",         "everything", "else",   "we", "do"};
@@ -37,7 +37,7 @@ TEST(P68, T2)
     EXPECT_EQ(result, expected);
 }
 
-TEST(P68, T3)
+TEST(p68, t3)
 {
     std::vector<std::string> words = {"Listen", "to", "many,", "speak", "to", "a", "few."};
 

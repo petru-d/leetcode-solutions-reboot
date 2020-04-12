@@ -8,7 +8,7 @@ template <typename T> int get_result(std::vector<int>& nums)
     return s.singleNumber(nums);
 }
 
-TEST(p136, T0)
+TEST(p136, t0)
 {
     std::vector<int> nums = {2, 2, 1};
 
@@ -19,7 +19,7 @@ TEST(p136, T0)
     EXPECT_EQ(result, 1);
 }
 
-TEST(p136, T1)
+TEST(p136, t1)
 {
     std::vector<int> nums = {4, 1, 2, 1, 2};
 

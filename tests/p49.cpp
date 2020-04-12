@@ -2,7 +2,7 @@
 
 #include "../problems/p49.h"
 
-TEST(P49, T0)
+TEST(p49, t0)
 {
     p49::Solution s;
 

@@ -2,7 +2,7 @@
 
 #include "../problems/challenge_7apr2020.h"
 
-TEST(challenge_7apr2020, T0)
+TEST(challenge_7apr2020, t0)
 {
     challenge_7apr2020::Solution s;
 
@@ -12,7 +12,7 @@ TEST(challenge_7apr2020, T0)
     EXPECT_EQ(result, 2);
 }
 
-TEST(challenge_7apr2020, T1)
+TEST(challenge_7apr2020, t1)
 {
     challenge_7apr2020::Solution s;
 
@@ -21,7 +21,7 @@ TEST(challenge_7apr2020, T1)
 
     EXPECT_EQ(result, 0);
 }
-TEST(challenge_7apr2020, T2)
+TEST(challenge_7apr2020, t2)
 {
     challenge_7apr2020::Solution s;
 
@@ -30,7 +30,7 @@ TEST(challenge_7apr2020, T2)
 
     EXPECT_EQ(result, 3);
 }
-TEST(challenge_7apr2020, T3)
+TEST(challenge_7apr2020, t3)
 {
     challenge_7apr2020::Solution s;
 

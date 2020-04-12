@@ -2,7 +2,7 @@
 
 #include "../problems/p122.h"
 
-TEST(P122, T0)
+TEST(p122, t0)
 {
     p122::Solution s;
 
@@ -11,7 +11,7 @@ TEST(P122, T0)
     EXPECT_EQ(proffit, 7);
 }
 
-TEST(P122, T1)
+TEST(p122, t1)
 {
     p122::Solution s;
 
@@ -20,7 +20,7 @@ TEST(P122, T1)
     EXPECT_EQ(proffit, 4);
 }
 
-TEST(P122, T2)
+TEST(p122, t2)
 {
     p122::Solution s;
 
@@ -29,7 +29,7 @@ TEST(P122, T2)
     EXPECT_EQ(proffit, 0);
 }
 
-TEST(P122, T3)
+TEST(p122, t3)
 {
     p122::Solution s;
 

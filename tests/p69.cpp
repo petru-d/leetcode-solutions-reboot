@@ -2,7 +2,7 @@
 
 #include "../problems/p69.h"
 
-TEST(P69, T0)
+TEST(p69, t0)
 {
     p69::Solution s;
     auto result = s.mySqrt(4);
@@ -10,7 +10,7 @@ TEST(P69, T0)
     EXPECT_EQ(result, 2);
 }
 
-TEST(P69, T1)
+TEST(p69, t1)
 {
     p69::Solution s;
     auto result = s.mySqrt(8);
@@ -18,7 +18,7 @@ TEST(P69, T1)
     EXPECT_EQ(result, 2);
 }
 
-TEST(P69, T2)
+TEST(p69, t2)
 {
     p69::Solution s;
     auto result = s.mySqrt(8);
@@ -26,7 +26,7 @@ TEST(P69, T2)
     EXPECT_EQ(result, 2);
 }
 
-TEST(P69, T3)
+TEST(p69, t3)
 {
     p69::Solution s;
     auto result = s.mySqrt(2147483647);
@@ -34,7 +34,7 @@ TEST(P69, T3)
     EXPECT_EQ(result, 46340);
 }
 
-TEST(P69, T4)
+TEST(p69, t4)
 {
     p69::Solution s;
     auto result = s.mySqrt(2);
@@ -42,7 +42,7 @@ TEST(P69, T4)
     EXPECT_EQ(result, 1);
 }
 
-TEST(P69, T5)
+TEST(p69, t5)
 {
     p69::Solution s;
     auto result = s.mySqrt(2147395600);

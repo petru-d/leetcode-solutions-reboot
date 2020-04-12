@@ -2,7 +2,7 @@
 
 #include "../problems/p844.h"
 
-TEST(P844, T0)
+TEST(p844, t0)
 {
     p844::Solution s;
 
@@ -10,7 +10,7 @@ TEST(P844, T0)
     EXPECT_EQ(res, true);
 }
 
-TEST(P844, T1)
+TEST(p844, t1)
 {
     p844::Solution s;
 
@@ -18,7 +18,7 @@ TEST(P844, T1)
     EXPECT_EQ(res, true);
 }
 
-TEST(P844, T2)
+TEST(p844, t2)
 {
     p844::Solution s;
 
@@ -26,7 +26,7 @@ TEST(P844, T2)
     EXPECT_EQ(res, true);
 }
 
-TEST(P844, T3)
+TEST(p844, t3)
 {
     p844::Solution s;
 
@@ -34,7 +34,7 @@ TEST(P844, T3)
     EXPECT_EQ(res, false);
 }
 
-TEST(P844, T4)
+TEST(p844, t4)
 {
     p844::Solution s;
 
@@ -42,7 +42,7 @@ TEST(P844, T4)
     EXPECT_EQ(res, true);
 }
 
-TEST(P844, T5)
+TEST(p844, t5)
 {
     p844::Solution s;
 

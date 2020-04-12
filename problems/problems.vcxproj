@@ -142,6 +142,7 @@
     <ClCompile Include="p88.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="p1046.h" />
     <ClInclude Include="binary_tree_util.h" />
     <ClInclude Include="challenge_7apr2020.h" />
     <ClInclude Include="p107.h" />

@@ -2,7 +2,7 @@
 
 #include "../problems/p1343.h"
 
-TEST(P1343, T0)
+TEST(p1343, t0)
 {
     p1343::Solution s;
 
@@ -12,7 +12,7 @@ TEST(P1343, T0)
     EXPECT_EQ(res, 3);
 }
 
-TEST(P1343, T1)
+TEST(p1343, t1)
 {
     p1343::Solution s;
 
@@ -22,7 +22,7 @@ TEST(P1343, T1)
     EXPECT_EQ(res, 5);
 }
 
-TEST(P1343, T2)
+TEST(p1343, t2)
 {
     p1343::Solution s;
 
@@ -32,7 +32,7 @@ TEST(P1343, T2)
     EXPECT_EQ(res, 6);
 }
 
-TEST(P1343, T3)
+TEST(p1343, t3)
 {
     p1343::Solution s;
 
@@ -42,7 +42,7 @@ TEST(P1343, T3)
     EXPECT_EQ(res, 1);
 }
 
-TEST(P1343, T4)
+TEST(p1343, t4)
 {
     p1343::Solution s;
 

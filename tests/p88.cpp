@@ -2,7 +2,7 @@
 
 #include "../problems/p88.h"
 
-TEST(P88, T0)
+TEST(p88, t0)
 {
     std::vector<int> nums1 = {1, 2, 3, 0, 0, 0};
     std::vector<int> nums2 = {2, 5, 6};
@@ -14,7 +14,7 @@ TEST(P88, T0)
     EXPECT_EQ(nums1, expected);
 }
 
-TEST(P88, T1)
+TEST(p88, t1)
 {
     std::vector<int> nums1 = {0};
     std::vector<int> nums2 = {1};

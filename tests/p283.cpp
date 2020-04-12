@@ -2,7 +2,7 @@
 
 #include "../problems/p283.h"
 
-TEST(P283, T0)
+TEST(p283, t0)
 {
     p283::Solution s;
 
@@ -12,7 +12,7 @@ TEST(P283, T0)
     EXPECT_EQ(nums, expected);
 }
 
-TEST(P283, T1)
+TEST(p283, t1)
 {
     p283::Solution s;
 
@@ -22,7 +22,7 @@ TEST(P283, T1)
     EXPECT_EQ(nums, expected);
 }
 
-TEST(P283, T2)
+TEST(p283, t2)
 {
     p283::Solution s;
 
@@ -32,7 +32,7 @@ TEST(P283, T2)
     EXPECT_EQ(nums, expected);
 }
 
-TEST(P283, T3)
+TEST(p283, t3)
 {
     p283::Solution s;
 

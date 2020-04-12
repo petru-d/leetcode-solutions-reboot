@@ -3,7 +3,7 @@
 #include "../problems/p83.h"
 #include "../problems/util_linked_list.h"
 
-TEST(P83, T0)
+TEST(p83, t0)
 {
     p83::Solution s;
 
@@ -13,7 +13,7 @@ TEST(P83, T0)
     EXPECT_EQ(true, eq_lists(result, expected));
 }
 
-TEST(P83, T1)
+TEST(p83, t1)
 {
     p83::Solution s;
 
@@ -23,7 +23,7 @@ TEST(P83, T1)
     EXPECT_EQ(true, eq_lists(result, expected));
 }
 
-TEST(P83, T2)
+TEST(p83, t2)
 {
     p83::Solution s;
 

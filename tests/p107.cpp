@@ -2,7 +2,7 @@
 
 #include "../problems/p107.h"
 
-TEST(P107, T0)
+TEST(p107, t0)
 {
     p107::Solution s;
 
@@ -17,7 +17,7 @@ TEST(P107, T0)
     EXPECT_EQ(res, expected);
 }
 
-TEST(P107, T1)
+TEST(p107, t1)
 {
     p107::Solution s;
 

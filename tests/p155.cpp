@@ -2,7 +2,7 @@
 
 #include "../problems/p155.h"
 
-TEST(P155, T0)
+TEST(p155, t0)
 {
     p155::MinStack obj;
     obj.push(-2);

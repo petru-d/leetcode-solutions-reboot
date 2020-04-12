@@ -2,7 +2,7 @@
 
 #include "../problems/p76.h"
 
-TEST(P76, T0)
+TEST(p76, t0)
 {
     p76::Solution s;
     auto result = s.minWindow("abac", "ada");
@@ -10,28 +10,28 @@ TEST(P76, T0)
     EXPECT_EQ(result, "");
 }
 
-TEST(P76, T1)
+TEST(p76, t1)
 {
     p76::Solution s;
     auto result = s.minWindow("ADOBECODEBANC", "ABC");
 
     EXPECT_EQ(result, "BANC");
 }
-TEST(P76, T2)
+TEST(p76, t2)
 {
     p76::Solution s;
     auto result = s.minWindow("ab", "b");
 
     EXPECT_EQ(result, "b");
 }
-TEST(P76, T3)
+TEST(p76, t3)
 {
     p76::Solution s;
     auto result = s.minWindow("bba", "ab");
 
     EXPECT_EQ(result, "ba");
 }
-TEST(P76, T4)
+TEST(p76, t4)
 {
     p76::Solution s;
     auto result = s.minWindow("aa", "aa");

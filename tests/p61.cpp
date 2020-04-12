@@ -3,7 +3,7 @@
 #include "../problems/p61.h"
 #include "../problems/util_linked_list.h"
 
-TEST(P61, T0)
+TEST(p61, t0)
 {
     p61::Solution s;
 
@@ -13,7 +13,7 @@ TEST(P61, T0)
     EXPECT_EQ(true, eq_lists(result, expected));
 }
 
-TEST(P61, T1)
+TEST(p61, t1)
 {
     p61::Solution s;
 
