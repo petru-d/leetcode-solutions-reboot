@@ -39,6 +39,7 @@
     <ClCompile Include="challenge_7apr2020.cpp" />
     <ClCompile Include="p1046.cpp" />
     <ClCompile Include="p107.cpp" />
+    <ClCompile Include="p1175.cpp" />
     <ClCompile Include="p122.cpp" />
     <ClCompile Include="p1343.cpp" />
     <ClCompile Include="p136.cpp" />
