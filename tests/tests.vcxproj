@@ -28,6 +28,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="challenge_14apr2020.cpp" />
     <ClCompile Include="challenge_7apr2020.cpp" />
     <ClCompile Include="p1046.cpp" />
     <ClCompile Include="p107.cpp" />
