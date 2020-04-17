@@ -101,6 +101,7 @@
     <ClInclude Include="p543.h" />
     <ClInclude Include="p556.h" />
     <ClInclude Include="p61.h" />
+    <ClInclude Include="p678.h" />
     <ClInclude Include="p68.h" />
     <ClInclude Include="p69.h" />
     <ClInclude Include="p76.h" />

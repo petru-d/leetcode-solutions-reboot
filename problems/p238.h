@@ -19,7 +19,7 @@ namespace p238
 
             // go backward - multiply the partial products with current backward product
             int curr_back = nums[N - 1];
-            for (int i = N - 2; i >= 0; --i)
+            for (int i = static_cast<int>(N) - 2; i >= 0; --i)
             {
                 result[i] *= curr_back;
                 curr_back *= nums[i];
