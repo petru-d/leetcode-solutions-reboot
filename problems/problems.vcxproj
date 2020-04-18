@@ -87,6 +87,7 @@
     <ClInclude Include="p107.h" />
     <ClInclude Include="p1175.h" />
     <ClInclude Include="p122.h" />
+    <ClInclude Include="p1291.h" />
     <ClInclude Include="p1343.h" />
     <ClInclude Include="p136.h" />
     <ClInclude Include="p171.h" />
@@ -106,6 +107,7 @@
     <ClInclude Include="p678.h" />
     <ClInclude Include="p68.h" />
     <ClInclude Include="p69.h" />
+    <ClInclude Include="p715.h" />
     <ClInclude Include="p76.h" />
     <ClInclude Include="p83.h" />
     <ClInclude Include="p88.h" />
