@@ -39,5 +39,6 @@
     <ClInclude Include="p715.h" />
     <ClInclude Include="p1291.h" />
     <ClInclude Include="p33.h" />
+    <ClInclude Include="p1328.h" />
   </ItemGroup>
 </Project>
