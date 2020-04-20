@@ -23,7 +23,6 @@
     <ClInclude Include="p171.h" />
     <ClInclude Include="p556.h" />
     <ClInclude Include="p543.h" />
-    <ClInclude Include="binary_tree_util.h" />
     <ClInclude Include="p1343.h" />
     <ClInclude Include="p107.h" />
     <ClInclude Include="p1046.h" />
@@ -40,5 +39,7 @@
     <ClInclude Include="p1291.h" />
     <ClInclude Include="p33.h" />
     <ClInclude Include="p1328.h" />
+    <ClInclude Include="p1008.h" />
+    <ClInclude Include="binary_tree_util.h" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "binary_tree_util.h"
+#include "util_binary_tree.h"
 #include <algorithm>
 
 namespace p543
