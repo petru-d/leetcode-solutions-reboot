@@ -80,7 +80,7 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="binary_tree_util.h" />
+    <ClInclude Include="util_binary_tree.h" />
     <ClInclude Include="challenge_14apr2020.h" />
     <ClInclude Include="p1008.h" />
     <ClInclude Include="p1046.h" />
