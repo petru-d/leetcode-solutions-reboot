@@ -40,6 +40,7 @@
     <ClInclude Include="p33.h" />
     <ClInclude Include="p1328.h" />
     <ClInclude Include="p1008.h" />
-    <ClInclude Include="binary_tree_util.h" />
+    <ClInclude Include="util_binary_tree.h" />
+    <ClInclude Include="challenge_21apr2020.h" />
   </ItemGroup>
 </Project>

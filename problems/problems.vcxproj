@@ -80,6 +80,7 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="challenge_21apr2020.h" />
     <ClInclude Include="util_binary_tree.h" />
     <ClInclude Include="challenge_14apr2020.h" />
     <ClInclude Include="p1008.h" />
