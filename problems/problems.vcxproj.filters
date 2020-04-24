@@ -45,5 +45,6 @@
     <ClInclude Include="p865.h" />
     <ClInclude Include="p560.h" />
     <ClInclude Include="p724.h" />
+    <ClInclude Include="p201.h" />
   </ItemGroup>
 </Project>

@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="challenge_21apr2020.h" />
+    <ClInclude Include="p201.h" />
     <ClInclude Include="p560.h" />
     <ClInclude Include="p724.h" />
     <ClInclude Include="p865.h" />
