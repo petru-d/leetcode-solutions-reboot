@@ -86,6 +86,7 @@
     <ClInclude Include="p55.h" />
     <ClInclude Include="p560.h" />
     <ClInclude Include="p724.h" />
+    <ClInclude Include="p735.h" />
     <ClInclude Include="p865.h" />
     <ClInclude Include="util_binary_tree.h" />
     <ClInclude Include="challenge_14apr2020.h" />
