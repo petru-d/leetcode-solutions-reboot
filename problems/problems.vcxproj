@@ -84,9 +84,11 @@
     <ClInclude Include="challenge_28apr2020.h" />
     <ClInclude Include="challenge_30apr2020.h" />
     <ClInclude Include="p1009.h" />
+    <ClInclude Include="p1029.h" />
     <ClInclude Include="p1081.h" />
     <ClInclude Include="p1143.h" />
     <ClInclude Include="p124.h" />
+    <ClInclude Include="p1422.h" />
     <ClInclude Include="p146.h" />
     <ClInclude Include="p201.h" />
     <ClInclude Include="p221.h" />
@@ -94,6 +96,7 @@
     <ClInclude Include="p316.h" />
     <ClInclude Include="p376.h" />
     <ClInclude Include="p383.h" />
+    <ClInclude Include="p387.h" />
     <ClInclude Include="p453.h" />
     <ClInclude Include="p476.h" />
     <ClInclude Include="p55.h" />
