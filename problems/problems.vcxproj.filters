@@ -67,5 +67,6 @@
     <ClInclude Include="p1029.h" />
     <ClInclude Include="p387.h" />
     <ClInclude Include="p1422.h" />
+    <ClInclude Include="p1108.h" />
   </ItemGroup>
 </Project>
