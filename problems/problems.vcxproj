@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -85,9 +85,11 @@
     <ClInclude Include="challenge_30apr2020.h" />
     <ClInclude Include="p1009.h" />
     <ClInclude Include="p1029.h" />
+    <ClInclude Include="p1040.h" />
     <ClInclude Include="p1081.h" />
     <ClInclude Include="p1108.h" />
     <ClInclude Include="p1143.h" />
+    <ClInclude Include="p1232.h" />
     <ClInclude Include="p124.h" />
     <ClInclude Include="p1422.h" />
     <ClInclude Include="p146.h" />
@@ -108,6 +110,7 @@
     <ClInclude Include="p771.h" />
     <ClInclude Include="p865.h" />
     <ClInclude Include="p896.h" />
+    <ClInclude Include="p993.h" />
     <ClInclude Include="util_binary_tree.h" />
     <ClInclude Include="challenge_14apr2020.h" />
     <ClInclude Include="p1008.h" />
