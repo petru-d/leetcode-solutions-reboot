@@ -84,6 +84,7 @@
     <ClCompile Include="p69.cpp" />
     <ClCompile Include="p715.cpp" />
     <ClCompile Include="p724.cpp" />
+    <ClCompile Include="p732.cpp" />
     <ClCompile Include="p735.cpp" />
     <ClCompile Include="p76.cpp" />
     <ClCompile Include="p771.cpp" />
