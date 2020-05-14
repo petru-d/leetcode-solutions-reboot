@@ -25,7 +25,10 @@ namespace p540
             if ((nums[pivot] == nums[pivot + 1] && pivot % 2 == 0) || (nums[pivot - 1] == nums[pivot] && pivot % 2 == 1))
                 return search(nums, pivot, r);
 
-            return search(nums, l, pivot);
+            if ((nums[pivot] == nums[pivot + 1] && pivot % 2 == 1) || (nums[pivot - 1] == nums[pivot] && pivot % 2 == 0))
+                return search(nums, l, pivot);
+
+            return nums[pivot];
         }
 
         bool unique(const std::vector<int>& nums, size_t p)
