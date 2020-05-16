@@ -100,6 +100,7 @@
     <ClInclude Include="p221.h" />
     <ClInclude Include="p278.h" />
     <ClInclude Include="p316.h" />
+    <ClInclude Include="p328.h" />
     <ClInclude Include="p376.h" />
     <ClInclude Include="p383.h" />
     <ClInclude Include="p387.h" />
@@ -119,6 +120,7 @@
     <ClInclude Include="p829.h" />
     <ClInclude Include="p865.h" />
     <ClInclude Include="p896.h" />
+    <ClInclude Include="p918.h" />
     <ClInclude Include="p993.h" />
     <ClInclude Include="p997.h" />
     <ClInclude Include="util_binary_tree.h" />
