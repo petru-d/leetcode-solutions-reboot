@@ -99,6 +99,7 @@
     <ClInclude Include="p208.h" />
     <ClInclude Include="p215.h" />
     <ClInclude Include="p221.h" />
+    <ClInclude Include="p230.h" />
     <ClInclude Include="p278.h" />
     <ClInclude Include="p316.h" />
     <ClInclude Include="p328.h" />
