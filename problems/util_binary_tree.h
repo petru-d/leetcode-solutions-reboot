@@ -11,6 +11,9 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr)
     {
     }
+    TreeNode(int x, TreeNode* l, TreeNode* r) : val(x), left(l), right(r)
+    {
+    }
 };
 
 inline TreeNode* make_binary_tree(int root_val)
@@ -91,4 +94,22 @@ inline std::vector<std::optional<int>> to_vector_levelwise_full(TreeNode* root)
             result.push_back(node != nullptr ? node->val : std::optional<int>());
 
     return result;
+}
+
+inline bool equal_trees(TreeNode* l, TreeNode* r)
+{
+    if (l == nullptr)
+        return r == nullptr;
+    if (r == nullptr)
+        return l == nullptr;
+
+    bool mid_equal = l->val == r->val;
+    if (!mid_equal)
+        return false;
+
+    bool l_equal = equal_trees(l->left, r->left);
+    if (!l_equal)
+        return false;
+
+    return equal_trees(l->right, r->right);
 }

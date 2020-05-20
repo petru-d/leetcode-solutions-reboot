@@ -39,7 +39,9 @@
     <ClCompile Include="p1040.cpp" />
     <ClCompile Include="p1046.cpp" />
     <ClCompile Include="p107.cpp" />
+    <ClCompile Include="p108.cpp" />
     <ClCompile Include="p1081.cpp" />
+    <ClCompile Include="p109.cpp" />
     <ClCompile Include="p1108.cpp" />
     <ClCompile Include="p1130.cpp" />
     <ClCompile Include="p1143.cpp" />

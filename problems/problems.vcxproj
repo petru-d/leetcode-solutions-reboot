@@ -86,7 +86,9 @@
     <ClInclude Include="p1009.h" />
     <ClInclude Include="p1029.h" />
     <ClInclude Include="p1040.h" />
+    <ClInclude Include="p108.h" />
     <ClInclude Include="p1081.h" />
+    <ClInclude Include="p109.h" />
     <ClInclude Include="p1108.h" />
     <ClInclude Include="p1130.h" />
     <ClInclude Include="p1143.h" />
