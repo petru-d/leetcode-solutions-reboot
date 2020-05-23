@@ -78,11 +78,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="challenge_21apr2020.h" />
     <ClInclude Include="challenge_28apr2020.h" />
     <ClInclude Include="challenge_30apr2020.h" />
+    <ClInclude Include="leetcode_speedup.h" />
     <ClInclude Include="p1009.h" />
     <ClInclude Include="p1029.h" />
     <ClInclude Include="p1040.h" />
@@ -107,6 +106,7 @@
     <ClInclude Include="p278.h" />
     <ClInclude Include="p316.h" />
     <ClInclude Include="p328.h" />
+    <ClInclude Include="p347.h" />
     <ClInclude Include="p376.h" />
     <ClInclude Include="p383.h" />
     <ClInclude Include="p387.h" />
@@ -132,6 +132,7 @@
     <ClInclude Include="p896.h" />
     <ClInclude Include="p901.h" />
     <ClInclude Include="p918.h" />
+    <ClInclude Include="p986.h" />
     <ClInclude Include="p993.h" />
     <ClInclude Include="p997.h" />
     <ClInclude Include="util_binary_tree.h" />
