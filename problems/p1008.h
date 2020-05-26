@@ -9,7 +9,7 @@ namespace p1008
     class Solution
     {
       public:
-        TreeNode* bstFromPreorder(std::vector<int>& preorder)
+        TreeNode* bstFromPreorder2(std::vector<int>& preorder)
         {
             if (preorder.empty())
                 return nullptr;
@@ -58,6 +58,29 @@ namespace p1008
             }
 
             return root;
+        }
+
+        TreeNode* bstFromPreorder(std::vector<int>& preorder)
+        {
+            size_t index = 0;
+            auto* root = build(std::numeric_limits<int>::max(), preorder, index);
+
+            return root;
+        }
+
+        TreeNode* build(int root_val, const std::vector<int>& preorder, size_t& next_index)
+        {
+            if (next_index >= preorder.size() || preorder[next_index] >= root_val)
+                return nullptr;
+
+            auto* newNode = new TreeNode(preorder[next_index]);
+
+            ++next_index;
+
+            newNode->left = build(newNode->val, preorder, next_index);
+            newNode->right = build(root_val, preorder, next_index);
+
+            return newNode;
         }
     };
 

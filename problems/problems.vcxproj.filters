@@ -98,5 +98,11 @@
     <ClInclude Include="p347.h" />
     <ClInclude Include="p986.h" />
     <ClInclude Include="leetcode_speedup.h" />
+    <ClInclude Include="p203.h" />
+    <ClInclude Include="p1103.h" />
+    <ClInclude Include="p1035.h" />
+    <ClInclude Include="p100.h" />
+    <ClInclude Include="p965.h" />
+    <ClInclude Include="p938.h" />
   </ItemGroup>
 </Project>
