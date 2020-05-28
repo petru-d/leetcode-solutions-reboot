@@ -110,6 +110,7 @@
     <ClInclude Include="p278.h" />
     <ClInclude Include="p316.h" />
     <ClInclude Include="p328.h" />
+    <ClInclude Include="p338.h" />
     <ClInclude Include="p347.h" />
     <ClInclude Include="p376.h" />
     <ClInclude Include="p383.h" />
@@ -133,6 +134,7 @@
     <ClInclude Include="p771.h" />
     <ClInclude Include="p829.h" />
     <ClInclude Include="p865.h" />
+    <ClInclude Include="p886.h" />
     <ClInclude Include="p896.h" />
     <ClInclude Include="p901.h" />
     <ClInclude Include="p918.h" />
