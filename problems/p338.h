@@ -26,15 +26,14 @@ namespace p338
                     {
                         result.push_back(result[curr_size - iteration_len + i] + h);
                         if (result.size() == num + 1)
-                            goto exit;
+                            return result;
                     }
                 }
 
                 iteration_len *= 2;
             }
 
-        exit:
-            return result;
+            return {};
         }
     };
 }

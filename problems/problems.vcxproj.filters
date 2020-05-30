@@ -106,5 +106,10 @@
     <ClInclude Include="p938.h" />
     <ClInclude Include="p886.h" />
     <ClInclude Include="p338.h" />
+    <ClInclude Include="p746.h" />
+    <ClInclude Include="p322.h" />
+    <ClInclude Include="p207.h" />
+    <ClInclude Include="p973.h" />
+    <ClInclude Include="p931.h" />
   </ItemGroup>
 </Project>
