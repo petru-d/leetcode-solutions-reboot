@@ -47,6 +47,7 @@
     <ClCompile Include="p1103.cpp" />
     <ClCompile Include="p1108.cpp" />
     <ClCompile Include="p1114.cpp" />
+    <ClCompile Include="p1117.cpp" />
     <ClCompile Include="p1130.cpp" />
     <ClCompile Include="p1143.cpp" />
     <ClCompile Include="p1175.cpp" />
@@ -138,6 +139,7 @@
     <ClCompile Include="p938.cpp" />
     <ClCompile Include="p965.cpp" />
     <ClCompile Include="p973.cpp" />
+    <ClCompile Include="p983.cpp" />
     <ClCompile Include="p986.cpp" />
     <ClCompile Include="p992.cpp" />
     <ClCompile Include="p997.cpp" />

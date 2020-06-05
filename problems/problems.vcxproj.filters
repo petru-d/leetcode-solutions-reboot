@@ -118,5 +118,7 @@
     <ClInclude Include="p344.h" />
     <ClInclude Include="p1114.h" />
     <ClInclude Include="p528.h" />
+    <ClInclude Include="p983.h" />
+    <ClInclude Include="p1117.h" />
   </ItemGroup>
 </Project>
