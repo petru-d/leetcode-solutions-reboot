@@ -125,10 +125,12 @@
     <ClInclude Include="p387.h" />
     <ClInclude Include="p401.h" />
     <ClInclude Include="p402.h" />
+    <ClInclude Include="p406.h" />
     <ClInclude Include="p438.h" />
     <ClInclude Include="p451.h" />
     <ClInclude Include="p453.h" />
     <ClInclude Include="p476.h" />
+    <ClInclude Include="p518.h" />
     <ClInclude Include="p528.h" />
     <ClInclude Include="p540.h" />
     <ClInclude Include="p55.h" />

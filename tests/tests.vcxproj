@@ -93,12 +93,14 @@
     <ClCompile Include="p387.cpp" />
     <ClCompile Include="p401.cpp" />
     <ClCompile Include="p402.cpp" />
+    <ClCompile Include="p406.cpp" />
     <ClCompile Include="p438.cpp" />
     <ClCompile Include="p451.cpp" />
     <ClCompile Include="p453.cpp" />
     <ClCompile Include="p47.cpp" />
     <ClCompile Include="p476.cpp" />
     <ClCompile Include="p49.cpp" />
+    <ClCompile Include="p518.cpp" />
     <ClCompile Include="p525.cpp" />
     <ClCompile Include="p528.cpp" />
     <ClCompile Include="p540.cpp" />

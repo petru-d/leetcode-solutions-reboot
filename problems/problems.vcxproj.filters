@@ -120,5 +120,7 @@
     <ClInclude Include="p528.h" />
     <ClInclude Include="p983.h" />
     <ClInclude Include="p1117.h" />
+    <ClInclude Include="p406.h" />
+    <ClInclude Include="p518.h" />
   </ItemGroup>
 </Project>
