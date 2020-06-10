@@ -4,5 +4,8 @@
 
 TEST(p392, t0)
 {
-    [[maybe_unused]] p392::Solution s;
+    p392::Solution s;
+
+    auto res = s.isSubsequence("abc", "ahbgdc");
+    EXPECT_TRUE(res);
 }

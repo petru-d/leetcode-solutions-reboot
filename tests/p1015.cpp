@@ -4,5 +4,8 @@
 
 TEST(p1015, t0)
 {
-    [[maybe_unused]] p1015::Solution s;
+    p1015::Solution s;
+
+    auto res = s.smallestRepunitDivByK(3);
+    EXPECT_EQ(res, 3);
 }
