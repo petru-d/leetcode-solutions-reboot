@@ -82,6 +82,7 @@
     <ClInclude Include="challenge_28apr2020.h" />
     <ClInclude Include="challenge_30apr2020.h" />
     <ClInclude Include="leetcode_speedup.h" />
+    <ClInclude Include="p1.h" />
     <ClInclude Include="p100.h" />
     <ClInclude Include="p1009.h" />
     <ClInclude Include="p1029.h" />
@@ -103,6 +104,7 @@
     <ClInclude Include="p146.h" />
     <ClInclude Include="p1464.h" />
     <ClInclude Include="p169.h" />
+    <ClInclude Include="p2.h" />
     <ClInclude Include="p201.h" />
     <ClInclude Include="p203.h" />
     <ClInclude Include="p207.h" />
@@ -115,6 +117,7 @@
     <ClInclude Include="p231.h" />
     <ClInclude Include="p237.h" />
     <ClInclude Include="p278.h" />
+    <ClInclude Include="p3.h" />
     <ClInclude Include="p316.h" />
     <ClInclude Include="p322.h" />
     <ClInclude Include="p328.h" />
@@ -124,6 +127,7 @@
     <ClInclude Include="p376.h" />
     <ClInclude Include="p383.h" />
     <ClInclude Include="p387.h" />
+    <ClInclude Include="p4.h" />
     <ClInclude Include="p401.h" />
     <ClInclude Include="p402.h" />
     <ClInclude Include="p406.h" />
@@ -131,6 +135,7 @@
     <ClInclude Include="p451.h" />
     <ClInclude Include="p453.h" />
     <ClInclude Include="p476.h" />
+    <ClInclude Include="p5.h" />
     <ClInclude Include="p518.h" />
     <ClInclude Include="p528.h" />
     <ClInclude Include="p540.h" />

@@ -33,6 +33,7 @@
     <ClCompile Include="challenge_28apr2020.cpp" />
     <ClCompile Include="challenge_30apr2020.cpp" />
     <ClCompile Include="challenge_7apr2020.cpp" />
+    <ClCompile Include="p1.cpp" />
     <ClCompile Include="p100.cpp" />
     <ClCompile Include="P1008.cpp" />
     <ClCompile Include="p1009.cpp" />
@@ -65,6 +66,7 @@
     <ClCompile Include="p155.cpp" />
     <ClCompile Include="p169.cpp" />
     <ClCompile Include="p171.cpp" />
+    <ClCompile Include="p2.cpp" />
     <ClCompile Include="p200.cpp" />
     <ClCompile Include="p201.cpp" />
     <ClCompile Include="p202.cpp" />
@@ -81,6 +83,7 @@
     <ClCompile Include="p238.cpp" />
     <ClCompile Include="p278.cpp" />
     <ClCompile Include="p283.cpp" />
+    <ClCompile Include="p3.cpp" />
     <ClCompile Include="p316.cpp" />
     <ClCompile Include="p322.cpp" />
     <ClCompile Include="p328.cpp" />
@@ -92,6 +95,7 @@
     <ClCompile Include="p376.cpp" />
     <ClCompile Include="p383.cpp" />
     <ClCompile Include="p387.cpp" />
+    <ClCompile Include="p4.cpp" />
     <ClCompile Include="p401.cpp" />
     <ClCompile Include="p402.cpp" />
     <ClCompile Include="p406.cpp" />
@@ -101,6 +105,7 @@
     <ClCompile Include="p47.cpp" />
     <ClCompile Include="p476.cpp" />
     <ClCompile Include="p49.cpp" />
+    <ClCompile Include="p5.cpp" />
     <ClCompile Include="p518.cpp" />
     <ClCompile Include="p525.cpp" />
     <ClCompile Include="p528.cpp" />

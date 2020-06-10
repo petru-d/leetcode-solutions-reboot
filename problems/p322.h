@@ -22,7 +22,7 @@ namespace p322
 
             auto res = dp.back();
 
-            return res == std::numeric_limits<int>::max() ? -1 : res;
+            return res == std::numeric_limits<int>::max() ? -1 : static_cast<int>(res);
         }
     };
 }
