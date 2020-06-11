@@ -4,5 +4,8 @@
 
 TEST(p279, t0)
 {
-    [[maybe_unused]] p279::Solution s;
+    p279::Solution s;
+
+    auto res = s.numSquares(12);
+    EXPECT_EQ(res, 3);
 }
