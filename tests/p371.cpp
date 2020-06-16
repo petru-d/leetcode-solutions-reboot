@@ -4,5 +4,7 @@
 
 TEST(p371, t0)
 {
-    [[maybe_unused]] p371::Solution s;
+    p371::Solution s;
+    auto res = s.getSum(2, 3);
+    EXPECT_EQ(res, 5);
 }
