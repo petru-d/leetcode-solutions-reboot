@@ -4,5 +4,9 @@
 
 TEST(p119, t0)
 {
-    [[maybe_unused]] p119::Solution s;
+    p119::Solution s;
+    auto res = s.getRow(3);
+
+    std::vector<int> expected = {1, 2, 1};
+    EXPECT_EQ(res, expected);
 }

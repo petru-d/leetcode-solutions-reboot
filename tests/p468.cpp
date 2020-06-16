@@ -4,5 +4,8 @@
 
 TEST(p468, t0)
 {
-    [[maybe_unused]] p468::Solution s;
+    p468::Solution s;
+
+    auto res = s.validIPAddress("172.16.254.1");
+    EXPECT_EQ(res, "IPv4");
 }

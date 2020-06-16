@@ -4,5 +4,9 @@
 
 TEST(p118, t0)
 {
-    [[maybe_unused]] p118::Solution s;
+    p118::Solution s;
+    auto res = s.generate(3);
+
+    std::vector<std::vector<int>> expected = {{1}, {1, 1}, {1, 2, 1}};
+    EXPECT_EQ(res, expected);
 }
