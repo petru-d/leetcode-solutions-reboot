@@ -4,5 +4,13 @@
 
 TEST(p1351, t0)
 {
-    [[maybe_unused]] p1351::Solution s;
+    p1351::Solution s;
+
+    std::vector<std::vector<int>> grid = {{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}};
+
+    auto res = s.countNegatives(grid);
+    EXPECT_EQ(res, 8);
+
+    res = s.countNegativesBS(grid);
+    EXPECT_EQ(res, 8);
 }
