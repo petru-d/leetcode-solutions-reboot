@@ -4,5 +4,10 @@
 
 TEST(p500, t0)
 {
-    [[maybe_unused]] p500::Solution s;
+    p500::Solution s;
+
+    std::vector<std::string> words = {"Hello", "Alaska", "Dad", "Peace"};
+    auto less_words = s.findWords(words);
+    std::vector<std::string> expected = {"Alaska", "Dad"};
+    EXPECT_EQ(less_words, expected);
 }
