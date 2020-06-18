@@ -4,5 +4,10 @@
 
 TEST(p81, t0)
 {
-    [[maybe_unused]] p81::Solution s;
+    p81::Solution s;
+
+    std::vector<int> nums = {2, 5, 6, 0, 0, 1, 2};
+    auto res = s.search(nums, 0);
+
+    EXPECT_TRUE(res);
 }
