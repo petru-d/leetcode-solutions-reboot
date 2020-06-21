@@ -4,5 +4,9 @@
 
 TEST(p1044, t0)
 {
-    [[maybe_unused]] p1044::Solution s;
+    p1044::Solution s;
+
+    auto res = s.longestDupSubstring("banana");
+
+    EXPECT_EQ(res, "ana");
 }

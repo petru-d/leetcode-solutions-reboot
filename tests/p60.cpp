@@ -4,5 +4,18 @@
 
 TEST(p60, t0)
 {
-    [[maybe_unused]] p60::Solution s;
+    p60::Solution s;
+
+    auto res = s.getPermutation(3, 4);
+
+    EXPECT_EQ(res, "231");
+}
+
+TEST(p60, t1)
+{
+    p60::Solution s;
+
+    auto res = s.getPermutation(4, 9);
+
+    EXPECT_EQ(res, "2314");
 }
