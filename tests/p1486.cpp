@@ -4,5 +4,9 @@
 
 TEST(p1486, t0)
 {
-    [[maybe_unused]] p1486::Solution s;
+    p1486::Solution s;
+
+    auto res = s.xorOperation(5, 0);
+
+    EXPECT_EQ(res, 8);
 }
