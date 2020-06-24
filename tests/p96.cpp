@@ -4,5 +4,8 @@
 
 TEST(p96, t0)
 {
-    [[maybe_unused]] p96::Solution s;
+    p96::Solution s;
+    auto res = s.numTrees(3);
+
+    EXPECT_EQ(res, 5);
 }

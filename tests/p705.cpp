@@ -4,5 +4,8 @@
 
 TEST(p705, t0)
 {
-    [[maybe_unused]] p705::Solution s;
+    p705::MyHashSet h;
+    h.add(1);
+    auto res = h.contains(1);
+    EXPECT_TRUE(res);
 }

@@ -4,5 +4,9 @@
 
 TEST(p563, t0)
 {
-    [[maybe_unused]] p563::Solution s;
+    p563::Solution s;
+
+    auto t = s.findTilt(make_binary_tree(2, 1, 3));
+
+    EXPECT_EQ(t, 1);
 }

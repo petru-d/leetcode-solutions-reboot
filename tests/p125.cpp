@@ -4,5 +4,8 @@
 
 TEST(p125, t0)
 {
-    [[maybe_unused]] p125::Solution s;
+    p125::Solution s;
+    auto res = s.isPalindrome("A man, a plan, a canal: Panama");
+
+    EXPECT_TRUE(res);
 }
