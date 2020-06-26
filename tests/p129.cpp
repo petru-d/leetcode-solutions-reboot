@@ -4,5 +4,9 @@
 
 TEST(p129, t0)
 {
-    [[maybe_unused]] p129::Solution s;
+    p129::Solution s;
+
+    auto res = s.sumNumbers(make_binary_tree(1, 2, 3));
+
+    EXPECT_EQ(res, 44);
 }
