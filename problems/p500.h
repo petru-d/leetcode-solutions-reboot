@@ -12,7 +12,7 @@ namespace p500
       public:
         std::vector<std::string> findWords(std::vector<std::string>& words)
         {
-            constexpr size_t span_len = 'z' - 'A';
+            constexpr size_t span_len = 1 + 'z' - 'A';
             constexpr size_t up_to_low_diff = 'a' - 'A';
 
             std::array<std::string, 3> rows_letters = {"QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"};
