@@ -4,5 +4,9 @@
 
 TEST(p62, t0)
 {
-    [[maybe_unused]] p62::Solution s;
+    p62::Solution s;
+
+    auto res = s.uniquePaths(3, 2);
+
+    EXPECT_EQ(res, 3);
 }

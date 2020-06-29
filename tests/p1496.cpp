@@ -4,5 +4,8 @@
 
 TEST(p1496, t0)
 {
-    [[maybe_unused]] p1496::Solution s;
+    p1496::Solution s;
+
+    auto res = s.isPathCrossing("NESWW");
+    EXPECT_TRUE(res);
 }
