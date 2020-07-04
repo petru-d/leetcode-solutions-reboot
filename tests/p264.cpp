@@ -4,5 +4,8 @@
 
 TEST(p264, t0)
 {
-    [[maybe_unused]] p264::Solution s;
+    p264::Solution s;
+    auto res = s.nthUglyNumber(10);
+
+    EXPECT_EQ(res, 12);
 }

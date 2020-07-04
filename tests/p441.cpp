@@ -4,5 +4,9 @@
 
 TEST(p441, t0)
 {
-    [[maybe_unused]] p441::Solution s;
+    p441::Solution s;
+
+    auto res = s.arrangeCoins(5);
+
+    EXPECT_EQ(res, 2);
 }

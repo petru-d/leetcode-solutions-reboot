@@ -4,5 +4,22 @@
 
 TEST(p164, t0)
 {
-    [[maybe_unused]] p164::Solution s;
+    p164::Solution s;
+
+    std::vector<int> nums = {3, 6, 9, 1};
+
+    auto res = s.maximumGap(nums);
+
+    EXPECT_EQ(res, 3);
+}
+
+TEST(p164, t1)
+{
+    p164::Solution s;
+
+    std::vector<int> nums = {1, 1, 1, 1, 1, 5, 5, 5, 5, 5};
+
+    auto res = s.maximumGap(nums);
+
+    EXPECT_EQ(res, 4);
 }

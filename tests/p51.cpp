@@ -4,5 +4,11 @@
 
 TEST(p51, t0)
 {
-    [[maybe_unused]] p51::Solution s;
+    p51::Solution s;
+
+    auto res = s.solveNQueens(4);
+
+    std::vector<std::vector<std::string>> expected = {{".Q..", "...Q", "Q...", "..Q."}, {"..Q.", "Q...", "...Q", ".Q.."}};
+
+    EXPECT_EQ(res, expected);
 }
