@@ -4,5 +4,8 @@
 
 TEST(p461, t0)
 {
-    [[maybe_unused]] p461::Solution s;
+    p461::Solution s;
+    auto res = s.hammingDistance(1, 4);
+
+    EXPECT_EQ(res, 2);
 }
