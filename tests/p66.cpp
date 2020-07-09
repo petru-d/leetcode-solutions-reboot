@@ -4,5 +4,10 @@
 
 TEST(p66, t0)
 {
-    [[maybe_unused]] p66::Solution s;
+    p66::Solution s;
+    std::vector<int> num = {1, 2, 3};
+    auto res = s.plusOne(num);
+
+    std::vector<int> exp = {1, 2, 4};
+    EXPECT_EQ(res, exp);
 }
