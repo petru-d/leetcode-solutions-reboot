@@ -4,5 +4,8 @@
 
 TEST(p1344, t0)
 {
-    [[maybe_unused]] p1344::Solution s;
+    p1344::Solution s;
+    auto res = s.angleClock(3, 15);
+
+    EXPECT_NEAR(res, 7.5, 0.001);
 }

@@ -4,5 +4,10 @@
 
 TEST(p704, t0)
 {
-    [[maybe_unused]] p704::Solution s;
+    p704::Solution s;
+
+    std::vector<int> nums = {2, 4, 5};
+    auto res = s.search(nums, 1);
+
+    EXPECT_EQ(res, -1);
 }
