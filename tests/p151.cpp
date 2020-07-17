@@ -4,5 +4,7 @@
 
 TEST(p151, t0)
 {
-    [[maybe_unused]] p151::Solution s;
+    p151::Solution s;
+    auto res = s.reverseWords("the sky is blue");
+    EXPECT_EQ(res, "blue is sky the");
 }
