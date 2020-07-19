@@ -4,5 +4,7 @@
 
 TEST(p67, t0)
 {
-    [[maybe_unused]] p67::Solution s;
+    p67::Solution s;
+    auto res = s.addBinary("11", "1");
+    EXPECT_EQ(res, "100");
 }
