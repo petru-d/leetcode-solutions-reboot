@@ -4,5 +4,12 @@
 
 TEST(p103, t0)
 {
-    [[maybe_unused]] p103::Solution s;
+    p103::Solution s;
+
+    auto tree = deserialize_tree("1(2,3)");
+
+    auto res = s.zigzagLevelOrder(tree);
+
+    std::vector<std::vector<int>> expected = {{1}, {3, 2}};
+    EXPECT_EQ(res, expected);
 }
