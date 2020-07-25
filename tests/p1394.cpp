@@ -4,5 +4,11 @@
 
 TEST(p1394, t0)
 {
-    [[maybe_unused]] p1394::Solution s;
+    p1394::Solution s;
+
+    std::vector<int> nums = {1, 2, 2, 3, 3, 3, 4};
+
+    auto res = s.findLucky(nums);
+
+    EXPECT_EQ(res, 3);
 }
