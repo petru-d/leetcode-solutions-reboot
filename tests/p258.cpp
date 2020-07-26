@@ -4,5 +4,9 @@
 
 TEST(p258, t0)
 {
-    [[maybe_unused]] p258::Solution s;
+    p258::Solution s;
+
+    auto res = s.addDigits(38);
+
+    EXPECT_EQ(res, 2);
 }
