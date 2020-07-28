@@ -4,5 +4,9 @@
 
 TEST(p1154, t0)
 {
-    [[maybe_unused]] p1154::Solution s;
+    p1154::Solution s;
+
+    auto res = s.dayOfYear("2019-01-09");
+
+    EXPECT_EQ(res, 9);
 }
