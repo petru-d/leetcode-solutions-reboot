@@ -4,5 +4,11 @@
 
 TEST(p217, t0)
 {
-    [[maybe_unused]] p217::Solution s;
+    p217::Solution s;
+
+    std::vector<int> nums = {1, 2, 3, 1};
+
+    auto res = s.containsDuplicate(nums);
+
+    EXPECT_TRUE(res);
 }
