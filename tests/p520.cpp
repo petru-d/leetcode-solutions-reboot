@@ -4,5 +4,9 @@
 
 TEST(p520, t0)
 {
-    [[maybe_unused]] p520::Solution s;
+    p520::Solution s;
+
+    auto res = s.detectCapitalUse("aX");
+
+    EXPECT_FALSE(res);
 }
