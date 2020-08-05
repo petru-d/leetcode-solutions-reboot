@@ -4,5 +4,11 @@
 
 TEST(p101, t0)
 {
-    [[maybe_unused]] p101::Solution s;
+    p101::Solution s;
+
+    auto* t = deserialize_tree("1(2,2)");
+
+    auto res = s.isSymmetric(t);
+
+    EXPECT_TRUE(res);
 }

@@ -4,5 +4,7 @@
 
 TEST(p342, t0)
 {
-    [[maybe_unused]] p342::Solution s;
+    p342::Solution s;
+    auto res = s.isPowerOfFour(1);
+    EXPECT_TRUE(res);
 }
