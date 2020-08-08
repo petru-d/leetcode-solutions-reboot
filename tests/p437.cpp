@@ -4,5 +4,11 @@
 
 TEST(p437, t0)
 {
-    [[maybe_unused]] p437::Solution s;
+    p437::Solution s;
+
+    auto* tree = deserialize_tree("10(5(3(3,-2),2(,1)),-3(,11))");
+
+    auto result = s.pathSum(tree, 8);
+
+    EXPECT_EQ(result, 3);
 }
