@@ -4,5 +4,7 @@
 
 TEST(p409, t0)
 {
-    [[maybe_unused]] p409::Solution s;
+    p409::Solution s;
+    auto res = s.longestPalindrome("abccccdd");
+    EXPECT_EQ(res, 7);
 }

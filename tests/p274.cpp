@@ -4,5 +4,10 @@
 
 TEST(p274, t0)
 {
-    [[maybe_unused]] p274::Solution s;
+    p274::Solution s;
+
+    std::vector<int> citations = {3, 0, 6, 1, 5};
+    auto res = s.hIndex(citations);
+
+    EXPECT_EQ(res, 3);
 }
