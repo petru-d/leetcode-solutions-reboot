@@ -4,5 +4,9 @@
 
 TEST(p824, t0)
 {
-    [[maybe_unused]] p824::Solution s;
+    p824::Solution s;
+
+    auto res = s.toGoatLatin("I speak Goat Latin");
+
+    EXPECT_EQ(res, "Imaa peaksmaaa oatGmaaaa atinLmaaaaa");
 }

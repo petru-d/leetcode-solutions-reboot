@@ -4,5 +4,10 @@
 
 TEST(p961, t0)
 {
-    [[maybe_unused]] p961::Solution s;
+    p961::Solution s;
+
+    std::vector<int> A = {5, 1, 5, 2, 5, 3, 5, 4};
+    auto res = s.repeatedNTimes(A);
+
+    EXPECT_EQ(res, 5);
 }
