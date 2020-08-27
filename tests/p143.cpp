@@ -4,5 +4,10 @@
 
 TEST(p143, t0)
 {
-    [[maybe_unused]] p143::Solution s;
+    p143::Solution s;
+
+    auto list = make_list(std::vector<int>{1, 2, 3, 4, 5});
+    s.reorderList(list);
+
+    EXPECT_TRUE(eq_lists(list, make_list(std::vector<int>{1, 5, 2, 4, 3})));
 }

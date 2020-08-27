@@ -4,5 +4,9 @@
 
 TEST(p1556, t0)
 {
-    [[maybe_unused]] p1556::Solution s;
+    p1556::Solution s;
+
+    auto res = s.thousandSeparator(123456789);
+
+    EXPECT_EQ(res, "123.456.789");
 }

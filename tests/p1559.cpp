@@ -4,5 +4,10 @@
 
 TEST(p1559, t0)
 {
-    [[maybe_unused]] p1559::Solution s;
+    p1559::Solution s;
+    std::vector<std::vector<char>> grid = {
+        {'a', 'a', 'a', 'a'}, {'a', 'b', 'b', 'a'}, {'a', 'b', 'b', 'a'}, {'a', 'a', 'a', 'a'}};
+
+    auto res = s.containsCycle(grid);
+    EXPECT_TRUE(res);
 }
