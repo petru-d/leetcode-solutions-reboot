@@ -4,5 +4,8 @@
 
 TEST(p470, t0)
 {
-    [[maybe_unused]] p470::Solution s;
+    p470::Solution s;
+    auto r = s.rand10();
+
+    EXPECT_TRUE(1 <= r && r <= 10);
 }

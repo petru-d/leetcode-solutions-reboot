@@ -4,5 +4,9 @@
 
 TEST(p459, t0)
 {
-    [[maybe_unused]] p459::Solution s;
+    p459::Solution s;
+
+    auto res = s.repeatedSubstringPattern("abcabcabcabc");
+
+    EXPECT_TRUE(res);
 }

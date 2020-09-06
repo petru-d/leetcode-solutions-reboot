@@ -4,5 +4,10 @@
 
 TEST(p606, t0)
 {
-    [[maybe_unused]] p606::Solution s;
+    auto* t = deserialize_tree("1(2(4,),3)");
+    p606::Solution s;
+
+    auto res = s.tree2str(t);
+
+    EXPECT_EQ(res, "1(2(4))(3)");
 }

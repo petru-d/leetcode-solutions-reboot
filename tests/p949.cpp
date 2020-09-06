@@ -4,5 +4,11 @@
 
 TEST(p949, t0)
 {
-    [[maybe_unused]] p949::Solution s;
+    p949::Solution s;
+
+    std::vector<int> digits = {1, 2, 3, 4};
+
+    auto res = s.largestTimeFromDigits(digits);
+
+    EXPECT_EQ(res, "23:41");
 }
