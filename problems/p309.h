@@ -16,7 +16,7 @@ namespace p309
             std::vector<int> proffits(prices.size(), 0);
             proffits.back() = 0;
 
-            for (int i = proffits.size() - 2; i >= 0; --i)
+            for (int i = int(proffits.size()) - 2; i >= 0; --i)
             {
                 if (prices[i + 1] < prices[i])
                     proffits[i] = proffits[i + 1];

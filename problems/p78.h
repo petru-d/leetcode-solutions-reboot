@@ -12,7 +12,7 @@ namespace p78
         {
             std::vector<std::vector<int>> pset;
 
-            size_t p = pow(2, nums.size());
+            size_t p = static_cast<size_t>(pow(2, nums.size()));
 
             for (size_t i = 0; i < p; ++i)
             {

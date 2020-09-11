@@ -58,7 +58,7 @@ namespace p297
                     ++end_pos;
 
                 int num = 0;
-                auto [p, ec] = std::from_chars(data.data() + pos, data.data() + end_pos, num);
+                [[maybe_unused]] auto [_, ec] = std::from_chars(data.data() + pos, data.data() + end_pos, num);
                 assert(ec == std::errc());
 
                 pos = end_pos;
