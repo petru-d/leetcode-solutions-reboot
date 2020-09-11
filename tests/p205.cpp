@@ -4,5 +4,9 @@
 
 TEST(p205, t0)
 {
-    [[maybe_unused]] p205::Solution s;
+    p205::Solution s;
+
+    auto res = s.isIsomorphic("abc", "def");
+
+    EXPECT_TRUE(res);
 }

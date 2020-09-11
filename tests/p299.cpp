@@ -4,5 +4,9 @@
 
 TEST(p299, t0)
 {
-    [[maybe_unused]] p299::Solution s;
+    p299::Solution s;
+
+    auto res = s.getHint("1807", "7810");
+
+    EXPECT_EQ(res, "1A3B");
 }

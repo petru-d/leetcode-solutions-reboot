@@ -4,5 +4,8 @@
 
 TEST(p1022, t0)
 {
-    [[maybe_unused]] p1022::Solution s;
+    p1022::Solution s;
+
+    auto sum = s.sumRootToLeaf(deserialize_tree("1(0(0,1),1(0,1))"));
+    EXPECT_EQ(sum, 22);
 }

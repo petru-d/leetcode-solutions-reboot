@@ -4,5 +4,9 @@
 
 TEST(p165, t0)
 {
-    [[maybe_unused]] p165::Solution s;
+    p165::Solution s;
+
+    auto res = s.compareVersion("1", "1");
+
+    EXPECT_EQ(res, 0);
 }
