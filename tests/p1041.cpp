@@ -4,5 +4,9 @@
 
 TEST(p1041, t0)
 {
-    [[maybe_unused]] p1041::Solution s;
+    p1041::Solution s;
+
+    auto res = s.isRobotBounded("GGLLGG");
+
+    EXPECT_TRUE(res);
 }

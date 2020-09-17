@@ -4,5 +4,10 @@
 
 TEST(p198, t0)
 {
-    [[maybe_unused]] p198::Solution s;
+    p198::Solution s;
+
+    std::vector<int> nums = {1, 2, 3, 1};
+    auto res = s.rob(nums);
+
+    EXPECT_EQ(res, 4);
 }

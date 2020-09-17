@@ -4,5 +4,9 @@
 
 TEST(p58, t0)
 {
-    [[maybe_unused]] p58::Solution s;
+    p58::Solution s;
+
+    auto res = s.lengthOfLastWord("Hello World");
+
+    EXPECT_EQ(res, 5);
 }

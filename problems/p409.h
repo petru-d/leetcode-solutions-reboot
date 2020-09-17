@@ -14,16 +14,16 @@ namespace p409
             for (const auto c : s)
             {
                 if (c >= 'a')
-                    ++n[26 + c - 'a'];
+                    ++n[size_t(26) + c - 'a'];
                 else
-                    ++n[c - 'A'];
+                    ++n[size_t(c) - 'A'];
             }
 
             bool found_odd = false;
             int result = 0;
             for (const auto lq : n)
             {
-                result += 2 * (lq / 2);
+                result += static_cast<int>(2 * (lq / 2));
                 if (lq % 2 == 1)
                     found_odd = true;
             }
