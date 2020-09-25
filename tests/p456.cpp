@@ -4,5 +4,11 @@
 
 TEST(p456, t0)
 {
-    [[maybe_unused]] p456::Solution s;
+    p456::Solution s;
+
+    std::vector<int> nums = {1, 3, 2};
+
+    auto res = s.find132pattern(nums);
+
+    EXPECT_TRUE(res);
 }

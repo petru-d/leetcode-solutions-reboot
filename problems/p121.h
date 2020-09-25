@@ -1,10 +1,11 @@
 #pragma once
-#include <unordered_map>
+#include <algorithm>
 #include <vector>
 
 namespace p121
 {
-    class Solution
+    // my original solution
+    /*class Solution
     {
         struct Action
         {
@@ -47,6 +48,30 @@ namespace p121
         {
             auto result = maxProfitOneTranzaction(prices, 0, prices.size());
             return result.valid() ? prices[result.sell_here] - prices[result.buy_here] : 0;
+        }
+    };*/
+
+    // better solution, using dynamic programming
+    class Solution
+    {
+      public:
+        int maxProfit(std::vector<int>& prices)
+        {
+            size_t N = prices.size();
+            if (N <= 1)
+                return 0;
+
+            int mini = prices[0];
+            int maxi = prices[0];
+
+            int max_proffit = 0;
+            for (size_t i = 1; i < N; ++i)
+            {
+                mini = std::min(mini, prices[i]);
+                max_proffit = std::max(max_proffit, prices[i] - mini);
+            }
+
+            return max_proffit;
         }
     };
 }

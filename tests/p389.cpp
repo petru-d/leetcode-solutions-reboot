@@ -4,5 +4,9 @@
 
 TEST(p389, t0)
 {
-    [[maybe_unused]] p389::Solution s;
+    p389::Solution s;
+
+    auto res = s.findTheDifference("bubu", "bubux");
+
+    EXPECT_EQ(res, 'x');
 }

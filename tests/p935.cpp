@@ -4,5 +4,9 @@
 
 TEST(p935, t0)
 {
-    [[maybe_unused]] p935::Solution s;
+    p935::Solution s;
+
+    auto res = s.knightDialer(2);
+
+    EXPECT_EQ(res, 20);
 }
