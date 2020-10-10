@@ -4,5 +4,11 @@
 
 TEST(p449, t0)
 {
-    [[maybe_unused]] p449::Solution s;
+    p449::Codec s;
+
+    auto tree = s.deserialize("2 1 3");
+
+    std::string serialized = serialize_tree(tree);
+
+    EXPECT_EQ(serialized, "2(1,3)");
 }
