@@ -4,5 +4,8 @@
 
 TEST(p933, t0)
 {
-    [[maybe_unused]] p933::Solution s;
+    p933::RecentCounter s;
+    auto res = s.ping(1);
+
+    EXPECT_EQ(res, 1);
 }

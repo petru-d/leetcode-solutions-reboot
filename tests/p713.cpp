@@ -4,5 +4,10 @@
 
 TEST(p713, t0)
 {
-    [[maybe_unused]] p713::Solution s;
+    p713::Solution s;
+
+    std::vector<int> nums = {10, 5, 2, 6};
+    auto res = s.numSubarrayProductLessThanK(nums, 100);
+
+    EXPECT_EQ(res, 8);
 }

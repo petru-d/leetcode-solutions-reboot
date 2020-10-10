@@ -16,7 +16,7 @@ namespace p389
                 --letters[size_t(ss) - 'a'];
             for (size_t i = 0; i < 26; ++i)
                 if (letters[i] != 0)
-                    return 'a' + i;
+                    return char('a' + i);
 
             return 0;
         }

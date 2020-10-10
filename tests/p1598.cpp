@@ -4,5 +4,11 @@
 
 TEST(p1598, t0)
 {
-    [[maybe_unused]] p1598::Solution s;
+    p1598::Solution s;
+
+    std::vector<std::string> logs = {"d1/", "d2/", "../", "d21/", "./"};
+
+    auto res = s.minOperations(logs);
+
+    EXPECT_EQ(res, 2);
 }

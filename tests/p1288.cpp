@@ -4,5 +4,10 @@
 
 TEST(p1288, t0)
 {
-    [[maybe_unused]] p1288::Solution s;
+    p1288::Solution s;
+
+    std::vector<std::vector<int>> intervals = {{1, 4}, {3, 6}, {2, 8}};
+    auto res = s.removeCoveredIntervals(intervals);
+
+    EXPECT_EQ(res, 2);
 }

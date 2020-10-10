@@ -4,5 +4,9 @@
 
 TEST(p1217, t0)
 {
-    [[maybe_unused]] p1217::Solution s;
+    p1217::Solution s;
+
+    std::vector<int> position = {1, 2, 3};
+    auto res = s.minCostToMoveChips(position);
+    EXPECT_EQ(res, 1);
 }

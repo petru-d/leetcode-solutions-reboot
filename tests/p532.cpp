@@ -4,5 +4,9 @@
 
 TEST(p532, t0)
 {
-    [[maybe_unused]] p532::Solution s;
+    p532::Solution s;
+
+    std::vector<int> nums = {3, 1, 4, 1, 5};
+    auto res = s.findPairs(nums, 2);
+    EXPECT_EQ(res, 2);
 }
