@@ -4,5 +4,10 @@
 
 TEST(p213, t0)
 {
-    [[maybe_unused]] p213::Solution s;
+    p213::Solution s;
+
+    std::vector<int> houses{2, 3, 2};
+    auto res = s.rob(houses);
+
+    EXPECT_EQ(res, 3);
 }

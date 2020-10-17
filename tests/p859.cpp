@@ -4,5 +4,9 @@
 
 TEST(p859, t0)
 {
-    [[maybe_unused]] p859::Solution s;
+    p859::Solution s;
+
+    auto res = s.buddyStrings("ab", "ba");
+
+    EXPECT_TRUE(res);
 }
