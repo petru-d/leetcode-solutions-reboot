@@ -4,5 +4,9 @@
 
 TEST(p111, t0)
 {
-    [[maybe_unused]] p111::Solution s;
+    p111::Solution s;
+
+    auto* tree = deserialize_tree("1(2,3)");
+    auto res = s.minDepth(tree);
+    EXPECT_EQ(res, 2);
 }

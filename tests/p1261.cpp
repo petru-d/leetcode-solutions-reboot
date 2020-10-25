@@ -4,5 +4,11 @@
 
 TEST(p1261, t0)
 {
-    [[maybe_unused]] p1261::Solution s;
+    auto* tree = deserialize_tree("-1(-1,-1)");
+
+    p1261::FindElements s(tree);
+
+    auto res = s.find(0);
+
+    EXPECT_TRUE(res);
 }

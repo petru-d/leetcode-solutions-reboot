@@ -4,5 +4,9 @@
 
 TEST(p345, t0)
 {
-    [[maybe_unused]] p345::Solution s;
+    p345::Solution s;
+
+    auto res = s.reverseVowels("ae");
+
+    EXPECT_EQ(res, "ea");
 }
