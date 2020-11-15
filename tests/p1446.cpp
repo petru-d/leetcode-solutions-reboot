@@ -4,5 +4,8 @@
 
 TEST(p1446, t0)
 {
-    [[maybe_unused]] p1446::Solution s;
+    p1446::Solution s;
+
+    auto res = s.maxPower("leetcode");
+    EXPECT_EQ(res, 2);
 }
