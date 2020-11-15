@@ -4,5 +4,13 @@
 
 TEST(p142, t0)
 {
-    [[maybe_unused]] p142::Solution s;
+    p142::Solution s;
+
+    auto* head = make_list({3, 2, 0, 4});
+    head->next->next->next = head->next;
+
+    auto* c = s.detectCycle(head);
+    ASSERT_NE(c, nullptr);
+
+    EXPECT_EQ(c->val, 2);
 }
