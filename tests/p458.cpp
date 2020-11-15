@@ -4,5 +4,9 @@
 
 TEST(p458, t0)
 {
-    [[maybe_unused]] p458::Solution s;
+    p458::Solution s;
+
+    auto p = s.poorPigs(1000, 15, 60);
+
+    EXPECT_EQ(p, 5);
 }
