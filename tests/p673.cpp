@@ -4,5 +4,10 @@
 
 TEST(p673, t0)
 {
-    [[maybe_unused]] p673::Solution s;
+    p673::Solution s;
+
+    std::vector<int> n = {1, 3, 5, 4, 7};
+    auto res = s.findNumberOfLIS(n);
+
+    EXPECT_EQ(res, 2);
 }
