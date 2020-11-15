@@ -4,5 +4,8 @@
 
 TEST(p1290, t0)
 {
-    [[maybe_unused]] p1290::Solution s;
+    p1290::Solution s;
+    auto res = s.getDecimalValue(make_list({1, 0, 1}));
+
+    EXPECT_EQ(res, 5);
 }
