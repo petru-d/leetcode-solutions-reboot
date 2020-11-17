@@ -4,5 +4,18 @@
 
 TEST(p858, t0)
 {
-    [[maybe_unused]] p858::Solution s;
+    p858::Solution s;
+
+    auto res = s.mirrorReflection(5, 2);
+
+    EXPECT_EQ(res, 0);
+}
+
+TEST(p858, t1)
+{
+    p858::Solution s;
+
+    auto res = s.mirrorReflection(5, 3);
+
+    EXPECT_EQ(res, 1);
 }
