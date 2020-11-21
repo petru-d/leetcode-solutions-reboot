@@ -4,5 +4,10 @@
 
 TEST(p845, t0)
 {
-    [[maybe_unused]] p845::Solution s;
+    p845::Solution s;
+
+    std::vector<int> arr = {2, 1, 4, 7, 3, 2, 5};
+    auto res = s.longestMountain(arr);
+
+    EXPECT_EQ(res, 5);
 }

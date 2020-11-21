@@ -23,7 +23,7 @@ namespace p371
             bool carry = false;
             for (size_t i = 0; i < sz; ++i)
             {
-                sum_bits[i] = a_bits[i] ^ b_bits[i] ^ carry;
+                sum_bits[i] = bool(bool(a_bits[i] ^ b_bits[i]) ^ carry);
                 // If at least two bits are on, the carry is on
                 carry = (a_bits[i] && b_bits[i]) || (a_bits[i] && carry) || (carry && b_bits[i]);
             }

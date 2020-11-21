@@ -20,7 +20,7 @@ namespace p713
                 current_prod *= nums[right - 1];
                 while (current_prod >= k && left < right)
                     current_prod /= nums[left++];
-                res += right - left;
+                res += int(right - left);
             }
 
             return res;

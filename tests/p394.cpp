@@ -4,5 +4,9 @@
 
 TEST(p394, t0)
 {
-    [[maybe_unused]] p394::Solution s;
+    p394::Solution s;
+
+    auto res = s.decodeString("3[a2[c]]");
+
+    EXPECT_EQ(res, "accaccacc");
 }

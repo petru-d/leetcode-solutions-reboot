@@ -43,7 +43,7 @@ namespace p310
             // run BFS until queue is empty
             while (!leaves.empty())
             {
-                int n = leaves.size();
+                int n = int(leaves.size());
 
                 // clear root nodes
                 res.clear();

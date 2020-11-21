@@ -4,5 +4,9 @@
 
 TEST(p204, t0)
 {
-    [[maybe_unused]] p204::Solution s;
+    p204::Solution s;
+
+    auto res = s.countPrimes(10);
+
+    EXPECT_EQ(res, 4);
 }
