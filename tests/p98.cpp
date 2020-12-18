@@ -4,5 +4,7 @@
 
 TEST(p98, t0)
 {
-    [[maybe_unused]] p98::Solution s;
+    p98::Solution s;
+    auto res = s.isValidBST(deserialize_tree("2(1,3)"));
+    EXPECT_TRUE(res);
 }
