@@ -4,5 +4,9 @@
 
 TEST(p337, t0)
 {
-    [[maybe_unused]] p337::Solution s;
+    p337::Solution s;
+
+    auto res = s.rob(deserialize_tree("3(2(,3),3(,1))"));
+
+    EXPECT_EQ(res, 7);
 }
