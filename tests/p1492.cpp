@@ -4,5 +4,8 @@
 
 TEST(p1492, t0)
 {
-    [[maybe_unused]] p1492::Solution s;
+    p1492::Solution s;
+    auto res = s.kthFactor(12, 3);
+
+    EXPECT_EQ(res, 3);
 }
