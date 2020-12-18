@@ -4,5 +4,10 @@
 
 TEST(p416, t0)
 {
-    [[maybe_unused]] p416::Solution s;
+    p416::Solution s;
+
+    std::vector<int> nums = {2, 3, 5};
+    auto res = s.canPartition(nums);
+
+    EXPECT_TRUE(res);
 }
