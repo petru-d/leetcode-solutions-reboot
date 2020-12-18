@@ -4,5 +4,8 @@
 
 TEST(p59, t0)
 {
-    [[maybe_unused]] p59::Solution s;
+    p59::Solution s;
+    auto res = s.generateMatrix(3);
+    auto expected = std::vector<std::vector<int>>{{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
+    EXPECT_EQ(res, expected);
 }
