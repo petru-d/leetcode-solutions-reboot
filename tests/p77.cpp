@@ -4,5 +4,8 @@
 
 TEST(p77, t0)
 {
-    [[maybe_unused]] p77::Solution s;
+    p77::Solution s;
+    auto res = s.combine(1, 1);
+    std::vector<std::vector<int>> expected = {{1}};
+    EXPECT_EQ(res, expected);
 }
