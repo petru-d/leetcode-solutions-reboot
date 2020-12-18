@@ -4,5 +4,8 @@
 
 TEST(p395, t0)
 {
-    [[maybe_unused]] p395::Solution s;
+    p395::Solution s;
+
+    auto res = s.longestSubstring("aaabb", 3);
+    EXPECT_EQ(res, 3);
 }

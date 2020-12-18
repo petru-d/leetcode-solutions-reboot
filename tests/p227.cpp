@@ -4,5 +4,8 @@
 
 TEST(p227, t0)
 {
-    [[maybe_unused]] p227::Solution s;
+    p227::Solution s;
+
+    auto res = s.calculate("3+2*2");
+    EXPECT_EQ(res, 7);
 }
