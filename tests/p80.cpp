@@ -4,5 +4,9 @@
 
 TEST(p80, t0)
 {
-    [[maybe_unused]] p80::Solution s;
+     p80::Solution s;
+
+     std::vector<int> nums = {1, 1, 1, 2, 2, 3};
+     auto res = s.removeDuplicates(nums);
+     EXPECT_EQ(res, 5);
 }
