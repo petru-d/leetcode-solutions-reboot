@@ -4,5 +4,9 @@
 
 TEST(p369, t0)
 {
-    [[maybe_unused]] p369::Solution s;
+    p369::Solution s;
+
+    auto* l = s.plusOne(make_list({1, 2, 3}));
+
+    EXPECT_TRUE(eq_lists(l, make_list({1, 2, 4})));
 }
