@@ -4,5 +4,8 @@
 
 TEST(p104, t0)
 {
-    [[maybe_unused]] p104::Solution s;
+    p104::Solution s;
+
+    auto res = s.maxDepth(deserialize_tree("1(2,3)"));
+    EXPECT_EQ(res, 2);
 }

@@ -4,5 +4,10 @@
 
 TEST(p1306, t0)
 {
-    [[maybe_unused]] p1306::Solution s;
+    p1306::Solution s;
+
+    std::vector<int> arr = {4, 2, 3, 0, 3, 1, 2};
+    auto res = s.canReach(arr, 5);
+
+    EXPECT_TRUE(res);
 }
