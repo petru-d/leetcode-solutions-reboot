@@ -4,5 +4,10 @@
 
 TEST(p804, t0)
 {
-    [[maybe_unused]] p804::Solution s;
+    p804::Solution s;
+
+    std::vector<std::string> words = {"gin", "zen", "gig", "msg"};
+    auto res = s.uniqueMorseRepresentations(words);
+
+    EXPECT_EQ(res, 2);
 }
