@@ -4,5 +4,8 @@
 
 TEST(p243, t0)
 {
-    [[maybe_unused]] p243::Solution s;
+    p243::Solution s;
+    std::vector<std::string> words = {"practice", "makes", "perfect", "coding", "makes"};
+    auto res = s.shortestDistance(words, "coding", "practice");
+    EXPECT_EQ(res, 3);
 }
