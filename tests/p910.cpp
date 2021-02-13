@@ -4,5 +4,10 @@
 
 TEST(p910, t0)
 {
-    [[maybe_unused]] p910::Solution s;
+    p910::Solution s;
+
+    std::vector<int> nums = {0, 10};
+    auto res = s.smallestRangeII(nums, 2);
+
+    EXPECT_EQ(res, 6);
 }
