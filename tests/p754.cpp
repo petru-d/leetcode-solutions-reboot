@@ -4,5 +4,9 @@
 
 TEST(p754, t0)
 {
-    [[maybe_unused]] p754::Solution s;
+    p754::Solution s;
+
+    auto res = s.reachNumber(3);
+
+    EXPECT_EQ(res, 2);
 }
