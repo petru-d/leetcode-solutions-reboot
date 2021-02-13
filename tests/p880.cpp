@@ -4,5 +4,7 @@
 
 TEST(p880, t0)
 {
-    [[maybe_unused]] p880::Solution s;
+    p880::Solution s;
+    auto res = s.decodeAtIndex("leet2code3", 10);
+    EXPECT_EQ(res, "o");
 }
