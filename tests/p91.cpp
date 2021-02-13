@@ -4,5 +4,9 @@
 
 TEST(p91, t0)
 {
-    [[maybe_unused]] p91::Solution s;
+    p91::Solution s;
+
+    auto res = s.numDecodings("12");
+
+    EXPECT_EQ(res, 2);
 }
