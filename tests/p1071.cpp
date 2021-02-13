@@ -4,5 +4,9 @@
 
 TEST(p1071, t0)
 {
-    [[maybe_unused]] p1071::Solution s;
+    p1071::Solution s;
+
+    auto res = s.gcdOfStrings("ABCABC", "ABC");
+
+    EXPECT_EQ(res, "ABC");
 }

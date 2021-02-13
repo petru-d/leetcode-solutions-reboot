@@ -4,5 +4,9 @@
 
 TEST(p266, t0)
 {
-    [[maybe_unused]] p266::Solution s;
+    p266::Solution s;
+
+    auto res = s.canPermutePalindrome("aab");
+
+    EXPECT_TRUE(res);
 }

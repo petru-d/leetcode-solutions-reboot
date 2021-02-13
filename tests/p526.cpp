@@ -4,5 +4,9 @@
 
 TEST(p526, t0)
 {
-    [[maybe_unused]] p526::Solution s;
+    p526::Solution s;
+
+    auto res = s.countArrangement(1);
+
+    EXPECT_EQ(res, 1);
 }
