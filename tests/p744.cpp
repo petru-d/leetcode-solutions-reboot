@@ -4,5 +4,11 @@
 
 TEST(p744, t0)
 {
-    [[maybe_unused]] p744::Solution s;
+    p744::Solution s;
+
+    std::vector<char> letters = {'c', 'f', 'j'};
+
+    auto res = s.nextGreatestLetter(letters, 'a');
+
+    EXPECT_EQ(res, 'c');
 }
