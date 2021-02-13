@@ -4,5 +4,10 @@
 
 TEST(p362, t0)
 {
-    [[maybe_unused]] p362::Solution s;
+    p362::HitCounter h;
+    h.hit(1);
+    h.hit(2);
+    h.hit(3);
+    auto hits = h.getHits(4);
+    EXPECT_EQ(hits, 3);
 }
