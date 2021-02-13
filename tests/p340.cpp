@@ -4,5 +4,9 @@
 
 TEST(p340, t0)
 {
-    [[maybe_unused]] p340::Solution s;
+    p340::Solution s;
+
+    auto res = s.lengthOfLongestSubstringKDistinct("eceba", 2);
+
+    EXPECT_EQ(res, 3);
 }
