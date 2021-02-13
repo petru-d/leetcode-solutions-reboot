@@ -4,5 +4,9 @@
 
 TEST(p82, t0)
 {
-    [[maybe_unused]] p82::Solution s;
+    p82::Solution s;
+
+    auto* res = s.deleteDuplicates(make_list({1, 2, 3, 3, 4, 4, 5}));
+
+    EXPECT_TRUE(eq_lists(res, make_list({1,2,5})));
 }
