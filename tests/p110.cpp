@@ -4,5 +4,11 @@
 
 TEST(p110, t0)
 {
-    [[maybe_unused]] p110::Solution s;
+    p110::Solution s;
+
+    auto* t = deserialize_tree("3(1,2)");
+
+    auto res = s.isBalanced(t);
+
+    EXPECT_TRUE(res);
 }
