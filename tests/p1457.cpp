@@ -4,5 +4,9 @@
 
 TEST(p1457, t0)
 {
-    [[maybe_unused]] p1457::Solution s;
+    p1457::Solution s;
+
+    auto res = s.pseudoPalindromicPaths(deserialize_tree("2(3(3,1),1(,1))"));
+    
+    EXPECT_EQ(res, 2);
 }
