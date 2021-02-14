@@ -4,5 +4,8 @@
 
 TEST(p1657, t0)
 {
-    [[maybe_unused]] p1657::Solution s;
+    p1657::Solution s;
+    auto res = s.closeStrings("cabbba", "abbccc");
+
+    EXPECT_TRUE(res);
 }
