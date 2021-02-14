@@ -4,5 +4,9 @@
 
 TEST(p1641, t0)
 {
-    [[maybe_unused]] p1641::Solution s;
+     p1641::Solution s;
+
+     auto res = s.countVowelStrings(2);
+
+     EXPECT_EQ(res, 15);
 }
