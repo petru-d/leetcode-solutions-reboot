@@ -4,5 +4,11 @@
 
 TEST(p1684, t0)
 {
-    [[maybe_unused]] p1684::Solution s;
+    p1684::Solution s;
+
+    std::vector<std::string> words = {"ad", "bd", "aaab", "baa", "badab"};
+
+    auto res = s.countConsistentStrings("ab", words);
+
+    EXPECT_EQ(res, 2);
 }
