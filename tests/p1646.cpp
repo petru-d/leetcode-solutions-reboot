@@ -4,5 +4,9 @@
 
 TEST(p1646, t0)
 {
-    [[maybe_unused]] p1646::Solution s;
+    p1646::Solution s;
+
+    auto res = s.getMaximumGenerated(7);
+
+    EXPECT_EQ(res, 3);
 }

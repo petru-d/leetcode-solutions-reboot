@@ -4,5 +4,9 @@
 
 TEST(p273, t0)
 {
-    [[maybe_unused]] p273::Solution s;
+    p273::Solution s;
+
+    auto res = s.numberToWords(123);
+
+    EXPECT_EQ(res, "One Hundred Twenty Three");
 }
