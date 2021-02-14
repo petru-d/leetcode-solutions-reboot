@@ -4,5 +4,10 @@
 
 TEST(p1649, t0)
 {
-    [[maybe_unused]] p1649::Solution s;
+    p1649::Solution s;
+
+    std::vector<int> nums = {1, 5, 6, 2};
+    auto res = s.createSortedArray(nums);
+
+    EXPECT_EQ(res, 1);
 }
