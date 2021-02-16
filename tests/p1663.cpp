@@ -4,5 +4,9 @@
 
 TEST(p1663, t0)
 {
-    [[maybe_unused]] p1663::Solution s;
+    p1663::Solution s;
+
+    auto res = s.getSmallestString(3, 27);
+
+    EXPECT_EQ(res, "aay");
 }
