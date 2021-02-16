@@ -4,5 +4,9 @@
 
 TEST(p1680, t0)
 {
-    [[maybe_unused]] p1680::Solution s;
+    p1680::Solution s;
+
+    auto res = s.concatenatedBinary(12);
+
+    EXPECT_EQ(res, 505379714);
 }
