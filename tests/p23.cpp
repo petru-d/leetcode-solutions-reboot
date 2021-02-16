@@ -4,5 +4,14 @@
 
 TEST(p23, t0)
 {
-    [[maybe_unused]] p23::Solution s;
+    p23::Solution s;
+
+    auto* l1 = make_list({1, 3});
+    auto* l2 = make_list({2, 4});
+
+    std::vector<ListNode*> v = {l1, l2};
+
+    auto* l = s.mergeKLists(v);
+
+    EXPECT_TRUE(eq_lists(l, make_list({1, 2, 3, 4})));
 }
