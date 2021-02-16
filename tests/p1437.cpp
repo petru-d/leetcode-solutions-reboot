@@ -4,5 +4,11 @@
 
 TEST(p1437, t0)
 {
-    [[maybe_unused]] p1437::Solution s;
+    p1437::Solution s;
+
+    std::vector<int> nums = {1, 0, 0, 0, 1, 0, 0, 1};
+
+    auto res = s.kLengthApart(nums, 2);
+
+    EXPECT_TRUE(res);
 }
