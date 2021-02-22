@@ -83,7 +83,7 @@ namespace p148
       private:
         void qsort(LLIterator s, LLIterator e)
         {
-            if (s == e)
+            if (s.operator==(e))
                 return;
             auto pivot = *s;
             LLIterator middle1 = std::partition(s, e, [pivot](const auto& em) { return em < pivot; });

@@ -1824,6 +1824,10 @@ set(ALL_FILES
     ${Sources}
 )
 
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/debug)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/release)
+
 add_executable(${PROJECT_NAME} ${ALL_FILES} )
 
 ################################################################################
