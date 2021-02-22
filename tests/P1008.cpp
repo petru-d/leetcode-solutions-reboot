@@ -4,7 +4,6 @@
 
 TEST(p1008, t0)
 {
-
     p1008::Solution s;
     std::vector<int> preorder = {8, 5, 1, 7, 10, 12};
     auto* tree = s.bstFromPreorder(preorder);

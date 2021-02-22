@@ -38,7 +38,7 @@ namespace p858
                 {
                     increase = !increase;
                     if (curr_coord < 0)
-                        curr_coord =- curr_coord;
+                        curr_coord = (-curr_coord);
                     if (curr_coord > p)
                         curr_coord = 2 * p - curr_coord;
                 }

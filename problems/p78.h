@@ -2,6 +2,7 @@
 
 #include <bitset>
 #include <vector>
+#include <cmath>
 
 namespace p78
 {

@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <cmath>
 
 namespace p1510
 {

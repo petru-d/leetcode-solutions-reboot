@@ -2,6 +2,7 @@
 #include "util_binary_tree.h"
 #include <bitset>
 #include <cassert>
+#include <cmath>
 
 namespace p222
 {
