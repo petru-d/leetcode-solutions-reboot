@@ -4,5 +4,8 @@
 
 TEST(p112, t0)
 {
-    [[maybe_unused]] p112::Solution s;
+    p112::Solution s;
+    auto res = s.hasPathSum(deserialize_tree("1(2,3)"), 5);
+
+    EXPECT_FALSE(res);
 }
