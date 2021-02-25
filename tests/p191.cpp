@@ -4,5 +4,9 @@
 
 TEST(p191, t0)
 {
-    [[maybe_unused]] p191::Solution s;
+    p191::Solution s;
+
+    auto res = s.hammingWeight(17);
+
+    EXPECT_EQ(res, 2);
 }
