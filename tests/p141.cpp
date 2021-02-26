@@ -4,5 +4,12 @@
 
 TEST(p141, t0)
 {
-    [[maybe_unused]] p141::Solution s;
+    p141::Solution s;
+
+    auto* l = make_list({1, 2, 3});
+    l->next->next->next = l;
+
+    auto res = s.hasCycle(l);
+
+    EXPECT_TRUE(res);
 }
