@@ -4,5 +4,8 @@
 
 TEST(p71, t0)
 {
-    [[maybe_unused]] p71::Solution s;
+    p71::Solution s;
+    auto res = s.simplifyPath("/home/");
+
+    EXPECT_EQ(res, "/home");
 }

@@ -4,5 +4,9 @@
 
 TEST(p821, t0)
 {
-    [[maybe_unused]] p821::Solution s;
+    p821::Solution s;
+
+    auto res = s.shortestToChar("aaab", 'b');
+
+    EXPECT_EQ(res, (std::vector<int>{3, 2, 1, 0}));
 }
