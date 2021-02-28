@@ -4,6 +4,8 @@
 
 TEST(p1038, t0)
 {
-    [[maybe_unused]] p1038::Solution s;
-    // same as 538
+    p1038::Solution s;
+    auto* t = s.bstToGst(deserialize_tree("0(,1)"));
+
+    EXPECT_EQ(serialize_tree(t), "1(,1)");
 }

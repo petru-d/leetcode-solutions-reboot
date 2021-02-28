@@ -29,3 +29,25 @@ namespace p538
         }
     };
 }
+
+/* another solution
+class Solution {
+public:
+    TreeNode* convertBST(TreeNode* root)
+    {
+        convert(root, 0);
+        return root;
+    }
+
+    int convert(TreeNode* root, int incoming)
+    {
+        if (!root)
+            return incoming;
+
+        int right_res = convert(root->right, incoming);
+        root->val += right_res;
+        return convert(root->left, root->val);
+    }
+};
+
+*/
