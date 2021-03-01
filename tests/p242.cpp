@@ -4,5 +4,8 @@
 
 TEST(p242, t0)
 {
-    [[maybe_unused]] p242::Solution s;
+    p242::Solution s;
+
+    auto res = s.isAnagram("ana", "gram");
+    EXPECT_FALSE(res);
 }
