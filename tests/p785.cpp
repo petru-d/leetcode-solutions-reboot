@@ -4,5 +4,8 @@
 
 TEST(p785, t0)
 {
-    [[maybe_unused]] p785::Solution s;
+    p785::Solution s;
+    std::vector<std::vector<int>> graph = {{1, 2, 3}, {0, 2}, {0, 1, 3}, {0, 2}};
+    auto res = s.isBipartite(graph);
+    EXPECT_FALSE(res);
 }
