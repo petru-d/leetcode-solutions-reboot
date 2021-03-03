@@ -4,5 +4,11 @@
 
 TEST(p1337, t0)
 {
-    [[maybe_unused]] p1337::Solution s;
+    p1337::Solution s;
+
+    std::vector<std::vector<int>> mat = {{1, 1, 0, 0, 0}, {1, 1, 1, 1, 0}, {1, 0, 0, 0, 0}, {1, 1, 0, 0, 0}, {1, 1, 1, 1, 1}};
+
+    auto res = s.kWeakestRows(mat, 3);
+
+    EXPECT_EQ(res, (std::vector<int>{2, 0, 3}));
 }
