@@ -4,5 +4,7 @@
 
 TEST(p13, t0)
 {
-    [[maybe_unused]] p13::Solution s;
+    p13::Solution s;
+    auto res = s.romanToInt("LVIII");
+    EXPECT_EQ(res, 58);
 }

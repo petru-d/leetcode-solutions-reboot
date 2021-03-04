@@ -4,5 +4,7 @@
 
 TEST(p991, t0)
 {
-    [[maybe_unused]] p991::Solution s;
+    p991::Solution s;
+    auto res = s.brokenCalc(2, 3);
+    EXPECT_EQ(res, 2);
 }

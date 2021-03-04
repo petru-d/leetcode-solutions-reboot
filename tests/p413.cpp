@@ -4,5 +4,9 @@
 
 TEST(p413, t0)
 {
-    [[maybe_unused]] p413::Solution s;
+    p413::Solution s;
+
+    std::vector<int> nums{1, 2, 3, 4};
+    auto res = s.numberOfArithmeticSlices(nums);
+    EXPECT_EQ(res, 3);
 }
