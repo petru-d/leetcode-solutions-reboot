@@ -4,5 +4,7 @@
 
 TEST(p277, t0)
 {
-    [[maybe_unused]] p277::Solution s;
+    p277::Solution s({{0, 1}, {2, 1}, {2, 0}});
+    auto res = s.findCelebrity(3);
+    EXPECT_EQ(res, 1);
 }

@@ -4,5 +4,9 @@
 
 TEST(p524, t0)
 {
-    [[maybe_unused]] p524::Solution s;
+    p524::Solution s;
+
+    std::vector<std::string> dictionary{"ale", "apple", "monkey", "plea"};
+    auto res = s.findLongestWord("abpcplea", dictionary);
+    EXPECT_EQ(res, "apple");
 }
