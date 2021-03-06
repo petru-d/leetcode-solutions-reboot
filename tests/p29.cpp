@@ -4,5 +4,8 @@
 
 TEST(p29, t0)
 {
-    [[maybe_unused]] p29::Solution s;
+    p29::Solution s;
+
+    auto res = s.divide(10, 3);
+    EXPECT_EQ(res, 3);
 }

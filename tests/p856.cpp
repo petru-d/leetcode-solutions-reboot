@@ -4,5 +4,7 @@
 
 TEST(p856, t0)
 {
-    [[maybe_unused]] p856::Solution s;
+    p856::Solution s;
+    auto res = s.scoreOfParentheses("(()(()))");
+    EXPECT_EQ(res, 6);
 }
