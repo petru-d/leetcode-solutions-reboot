@@ -4,5 +4,8 @@
 
 TEST(p575, t0)
 {
-    [[maybe_unused]] p575::Solution s;
+    p575::Solution s;
+    std::vector<int> candyType = {1, 1, 2, 2, 3, 3};
+    auto res = s.distributeCandies(candyType);
+    EXPECT_EQ(res, 3);
 }

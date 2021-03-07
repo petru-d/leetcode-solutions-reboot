@@ -4,5 +4,13 @@
 
 TEST(p645, t0)
 {
-    [[maybe_unused]] p645::Solution s;
+    p645::Solution s;
+
+    std::vector<int> nums = {1, 2, 2, 4};
+
+    auto res = s.findErrorNumsleetcode(nums);
+    EXPECT_EQ(res, (std::vector<int>{2, 3}));
+
+    res = s.findErrorNumsMine(nums);
+    EXPECT_EQ(res, (std::vector<int>{2, 3}));
 }

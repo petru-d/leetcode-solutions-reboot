@@ -4,5 +4,7 @@
 
 TEST(p1165, t0)
 {
-    [[maybe_unused]] p1165::Solution s;
+    p1165::Solution s;
+    auto res = s.calculateTime("abcdefghijklmnopqrstuvwxyz", "cba");
+    EXPECT_EQ(res, 4);
 }
