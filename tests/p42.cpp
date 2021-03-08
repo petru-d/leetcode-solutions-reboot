@@ -4,5 +4,8 @@
 
 TEST(p42, t0)
 {
-    [[maybe_unused]] p42::Solution s;
+    p42::Solution s;
+    std::vector<int> height = {4, 2, 0, 3, 2, 5};
+    auto res = s.trap(height);
+    EXPECT_EQ(res, 9);
 }
