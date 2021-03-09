@@ -4,5 +4,7 @@
 
 TEST(p1332, t0)
 {
-    [[maybe_unused]] p1332::Solution s;
+    p1332::Solution s;
+    auto res = s.removePalindromeSub("aba");
+    EXPECT_EQ(res, 1);
 }

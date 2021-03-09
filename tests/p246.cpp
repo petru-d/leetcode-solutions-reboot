@@ -4,5 +4,7 @@
 
 TEST(p246, t0)
 {
-    [[maybe_unused]] p246::Solution s;
+    p246::Solution s;
+    auto res = s.isStrobogrammatic("69");
+    EXPECT_TRUE(res);
 }

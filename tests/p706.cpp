@@ -4,5 +4,9 @@
 
 TEST(p706, t0)
 {
-    [[maybe_unused]] p706::Solution s;
+    p706::MyHashMap h;
+    h.put(1, 1);
+    h.put(2, 2);
+    auto res = h.get(1);
+    EXPECT_EQ(res, 1);
 }
