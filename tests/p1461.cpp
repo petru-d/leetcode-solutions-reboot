@@ -4,5 +4,8 @@
 
 TEST(p1461, t0)
 {
-    [[maybe_unused]] p1461::Solution s;
+    p1461::Solution s;
+
+    auto res = s.hasAllCodes("01100", 2);
+    EXPECT_TRUE(res);
 }

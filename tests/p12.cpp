@@ -4,5 +4,7 @@
 
 TEST(p12, t0)
 {
-    [[maybe_unused]] p12::Solution s;
+    p12::Solution s;
+    auto res = s.intToRoman(3);
+    EXPECT_EQ(res, "III");
 }
