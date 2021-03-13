@@ -4,5 +4,9 @@
 
 TEST(p823, t0)
 {
-    [[maybe_unused]] p823::Solution s;
+    p823::Solution s;
+
+    std::vector<int> nums = {2, 4, 5, 10};
+    auto res = s.numFactoredBinaryTrees(nums);
+    EXPECT_EQ(res, 7);
 }
