@@ -4,5 +4,8 @@
 
 TEST(p1721, t0)
 {
-    [[maybe_unused]] p1721::Solution s;
+    p1721::Solution s;
+
+    auto* res = s.swapNodes(make_list({1, 2, 3, 4}), 1);
+    EXPECT_TRUE(eq_lists(res, make_list({4, 2, 3, 1})));
 }
