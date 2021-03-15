@@ -4,5 +4,8 @@
 
 TEST(p536, t0)
 {
-    [[maybe_unused]] p536::Solution s;
+    p536::Solution s;
+
+    auto* tree = s.str2tree("1(2)(3)");
+    EXPECT_EQ(serialize_tree(tree), "1(2,3)");
 }

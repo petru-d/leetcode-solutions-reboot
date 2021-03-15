@@ -4,5 +4,8 @@
 
 TEST(p535, t0)
 {
-    [[maybe_unused]] p535::Solution s;
+    p535::Solution s;
+
+    auto res = s.decode(s.encode("Aaaa"));
+    EXPECT_EQ(res, "Aaaa");
 }
