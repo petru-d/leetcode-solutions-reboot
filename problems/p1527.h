@@ -2,7 +2,8 @@
 
 namespace p1527
 {
-    class Solution
+    std::string query()
     {
-    };
+        return "SELECT * from Patients WHERE conditions LIKE 'DIAB1%' or conditions LIKE '% DIAB1%'";
+    }
 }

@@ -1866,6 +1866,9 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} ${GTEST_LIBRARIES})
 
+find_package(SQLite3 REQUIRED CONFIG)
+target_link_libraries(${PROJECT_NAME} SQLite::SQLite3)
+
 ################################################################################
 # Compile and link options
 ################################################################################

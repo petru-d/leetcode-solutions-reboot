@@ -4,5 +4,8 @@
 
 TEST(p714, t0)
 {
-    [[maybe_unused]] p714::Solution s;
+    p714::Solution s;
+    std::vector<int> prices{1, 3, 2, 8, 4, 9};
+    auto res = s.maxProfit(prices, 2);
+    EXPECT_EQ(res, 8);
 }

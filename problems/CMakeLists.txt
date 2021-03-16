@@ -1819,5 +1819,7 @@ set(ALL_FILES
     ${no_group_source_files}
 )
 
+find_package(SQLite3 REQUIRED CONFIG)
+
 add_custom_target(${PROJECT_NAME} SOURCES ${ALL_FILES})
 
