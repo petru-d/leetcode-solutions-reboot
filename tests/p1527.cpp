@@ -3,20 +3,22 @@
 #include "../problems/p1527.h"
 
 #include <sqlite3.h>
-
-struct Patient
+namespace
 {
-    int Id = 0;
-    std::string Name;
-    std::string Conditions;
-};
+    struct Patient
+    {
+        int Id = 0;
+        std::string Name;
+        std::string Conditions;
+    };
 
-std::vector<Patient> extracted;
+    std::vector<Patient> extracted;
 
-int callback(void* data, int argc, char** argv, char** azColName)
-{
-    extracted.push_back(Patient{atoi(argv[0]), std::string(argv[1]), std::string(argv[2])});
-    return 0;
+    int callback(void* data, int argc, char** argv, char** azColName)
+    {
+        extracted.push_back(Patient{atoi(argv[0]), std::string(argv[1]), std::string(argv[2])});
+        return 0;
+    }
 }
 
 TEST(p1527, t0)
