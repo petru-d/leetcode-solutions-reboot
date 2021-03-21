@@ -4,5 +4,7 @@
 
 TEST(p869, t0)
 {
-    [[maybe_unused]] p869::Solution s;
+    p869::Solution s;
+    auto res = s.reorderedPowerOf2(46);
+    EXPECT_TRUE(res);
 }
