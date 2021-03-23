@@ -4,5 +4,7 @@
 
 TEST(p65, t0)
 {
-    [[maybe_unused]] p65::Solution s;
+    p65::Solution s;
+    auto res = s.isNumber("123.123");
+    EXPECT_TRUE(res);
 }
