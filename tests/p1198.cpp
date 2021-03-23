@@ -4,5 +4,9 @@
 
 TEST(p1198, t0)
 {
-    [[maybe_unused]] p1198::Solution s;
+    p1198::Solution s;
+
+    std::vector<std::vector<int>> mat = {{1, 2, 3, 4, 5}, {5, 6, 7, 8, 9}};
+    auto res = s.smallestCommonElement(mat);
+    EXPECT_EQ(res, 5);
 }

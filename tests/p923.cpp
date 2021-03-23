@@ -4,5 +4,8 @@
 
 TEST(p923, t0)
 {
-    [[maybe_unused]] p923::Solution s;
+    p923::Solution s;
+    std::vector<int> arr = {1, 1, 2, 2, 3};
+    auto res = s.threeSumMulti(arr, 5);
+    EXPECT_EQ(res, 3);
 }
