@@ -4,5 +4,7 @@
 
 TEST(p415, t0)
 {
-    [[maybe_unused]] p415::Solution s;
+    p415::Solution s;
+    auto res = s.addStrings("11", "123");
+    EXPECT_EQ(res, "134");
 }

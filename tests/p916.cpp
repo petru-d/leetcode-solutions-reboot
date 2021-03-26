@@ -4,5 +4,13 @@
 
 TEST(p916, t0)
 {
-    [[maybe_unused]] p916::Solution s;
+    p916::Solution s;
+
+    std::vector<std::string> A = {"amazon", "apple", "facebook", "google", "leetcode"};
+    std::vector<std::string> B = {"e", "o"};
+    auto res = s.wordSubsets(A, B);
+
+    std::vector<std::string> exp = {"facebook", "google", "leetcode"};
+
+    EXPECT_TRUE(std::is_permutation(res.begin(), res.end(), exp.begin()));
 }
