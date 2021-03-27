@@ -4,5 +4,7 @@
 
 TEST(p647, t0)
 {
-    [[maybe_unused]] p647::Solution s;
+    p647::Solution s;
+    auto res = s.countSubstrings("axxa");
+    EXPECT_EQ(res, 6);
 }
