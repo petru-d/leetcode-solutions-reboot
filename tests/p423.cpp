@@ -4,5 +4,7 @@
 
 TEST(p423, t0)
 {
-    [[maybe_unused]] p423::Solution s;
+    p423::Solution s;
+    auto res = s.originalDigits("nnie");
+    EXPECT_EQ(res, "9");
 }
