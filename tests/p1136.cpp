@@ -4,5 +4,14 @@
 
 TEST(p1136, t0)
 {
-    [[maybe_unused]] p1136::Solution s;
+
+    std::vector<std::vector<int>> c{{1, 3}, {2, 3}};
+
+    p1136::Solution s;
+    auto res = s.minimumSemesters(3, c);
+    EXPECT_EQ(res, 2);
+
+    p1136::Solution2 s2;
+    res = s.minimumSemesters(3, c);
+    EXPECT_EQ(res, 2);
 }
