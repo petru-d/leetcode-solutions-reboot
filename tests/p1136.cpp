@@ -12,6 +12,6 @@ TEST(p1136, t0)
     EXPECT_EQ(res, 2);
 
     p1136::Solution2 s2;
-    res = s.minimumSemesters(3, c);
+    res = s2.minimumSemesters(3, c);
     EXPECT_EQ(res, 2);
 }
