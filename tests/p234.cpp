@@ -4,5 +4,7 @@
 
 TEST(p234, t0)
 {
-    [[maybe_unused]] p234::Solution s;
+    p234::Solution s;
+    auto res = s.isPalindrome(make_list({1, 2}));
+    EXPECT_FALSE(res);
 }
