@@ -34,4 +34,56 @@ namespace p474
             return dp_prev[Z][O];
         }
     };
+
+    class Solution2
+    {
+      public:
+        int findMaxForm(std::vector<std::string>& strs, int m, int n)
+        {
+            auto Z = strs.size();
+
+            struct ZeroOne
+            {
+                size_t Zero = 0;
+                size_t One = 0;
+            };
+            std::vector<ZeroOne> zeroOnes;
+            zeroOnes.reserve(Z);
+
+            for (const auto& s : strs)
+            {
+                ZeroOne zo;
+                for (auto c : s)
+                    if (c == '0')
+                        ++zo.Zero;
+                    else
+                        ++zo.One;
+                zeroOnes.push_back(std::move(zo));
+            }
+
+            std::vector<std::vector<size_t>> old_dp(m + 1, std::vector<size_t>(n + 1, 0));
+            std::vector<std::vector<size_t>> dp(m + 1, std::vector<size_t>(n + 1, 0));
+
+            for (size_t row = 0; row <= m; ++row)
+                for (size_t col = 0; col <= n; ++col)
+                    if (zeroOnes[0].Zero <= row && zeroOnes[0].One <= col)
+                        old_dp[row][col] = 1;
+
+            for (size_t zo = 1; zo < Z; ++zo)
+            {
+                for (size_t row = 0; row <= m; ++row)
+                    for (size_t col = 0; col <= n; ++col)
+                    {
+                        size_t upper_left = 0;
+                        if (row >= zeroOnes[zo].Zero && col >= zeroOnes[zo].One)
+                            upper_left = 1 + old_dp[row - zeroOnes[zo].Zero][col - zeroOnes[zo].One];
+                        dp[row][col] = std::max(old_dp[row][col], upper_left);
+                    }
+
+                std::swap(dp, old_dp);
+            }
+
+            return old_dp[m][n];
+        }
+    };
 }
