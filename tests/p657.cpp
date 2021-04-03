@@ -4,5 +4,7 @@
 
 TEST(p657, t0)
 {
-    [[maybe_unused]] p657::Solution s;
+    p657::Solution s;
+    auto res = s.judgeCircle("UD");
+    EXPECT_TRUE(res);
 }
