@@ -4,5 +4,8 @@
 
 TEST(p775, t0)
 {
-    [[maybe_unused]] p775::Solution s;
+    p775::Solution s;
+    std::vector<int> A = {0, 1, 2};
+    auto res = s.isIdealPermutation(A);
+    EXPECT_TRUE(res);
 }
