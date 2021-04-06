@@ -4,5 +4,7 @@
 
 TEST(p1551, t0)
 {
-    [[maybe_unused]] p1551::Solution s;
+    p1551::Solution s;
+    auto res = s.minOperations(3);
+    EXPECT_EQ(res, 2);
 }
