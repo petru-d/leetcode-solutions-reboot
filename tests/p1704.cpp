@@ -4,5 +4,7 @@
 
 TEST(p1704, t0)
 {
-    [[maybe_unused]] p1704::Solution s;
+    p1704::Solution s;
+    auto res = s.halvesAreAlike("aa");
+    EXPECT_TRUE(res);
 }
