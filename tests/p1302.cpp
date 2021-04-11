@@ -4,5 +4,13 @@
 
 TEST(p1302, t0)
 {
-    [[maybe_unused]] p1302::Solution s;
+    auto* tree = deserialize_tree("1(2,3)");
+
+    p1302::Solution s;
+    auto res = s.deepestLeavesSum(tree);
+    EXPECT_EQ(res, 5);
+
+    p1302::Solution2 s2;
+    res = s2.deepestLeavesSum(tree);
+    EXPECT_EQ(res, 5);
 }
