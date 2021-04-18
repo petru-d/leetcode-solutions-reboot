@@ -4,5 +4,11 @@
 
 TEST(p1348, t0)
 {
-    [[maybe_unused]] p1348::Solution s;
+    p1348::TweetCounts tc;
+    tc.recordTweet("3", 0);
+    tc.recordTweet("3", 60);
+    tc.recordTweet("3", 10);
+    auto res = tc.getTweetCountsPerFrequency("minute", "3", 0, 59);
+
+    EXPECT_EQ(res, (std::vector<int>{2}));
 }

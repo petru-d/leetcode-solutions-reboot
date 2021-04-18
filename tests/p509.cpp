@@ -4,5 +4,7 @@
 
 TEST(p509, t0)
 {
-    [[maybe_unused]] p509::Solution s;
+    p509::Solution s;
+    auto res = s.fib(3);
+    EXPECT_EQ(res, 2);
 }

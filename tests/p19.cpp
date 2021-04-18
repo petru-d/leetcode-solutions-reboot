@@ -4,5 +4,8 @@
 
 TEST(p19, t0)
 {
-    [[maybe_unused]] p19::Solution s;
+    p19::Solution s;
+    auto* res = s.removeNthFromEnd(make_list({1, 2, 3, 4, 5}), 2);
+
+    EXPECT_TRUE(eq_lists(res, make_list({1, 2, 3, 5})));
 }

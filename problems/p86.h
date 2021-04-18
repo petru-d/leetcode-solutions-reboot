@@ -48,4 +48,47 @@ namespace p86
             return head_smaller;
         }
     };
+
+    class Solution2
+    {
+      public:
+        ListNode* partition(ListNode* head, int x)
+        {
+            ListNode* small = nullptr;
+            ListNode* small_tail = nullptr;
+
+            ListNode* big = nullptr;
+            ListNode* big_tail = nullptr;
+
+            auto move_to_list = [](ListNode*& head, ListNode*& tail, ListNode* n) {
+                if (!tail)
+                    head = tail = n;
+                else
+                {
+                    tail->next = n;
+                    tail = n;
+                }
+            };
+
+            ListNode* curr = head;
+            while (curr)
+            {
+                if (curr->val < x)
+                    move_to_list(small, small_tail, curr);
+                else
+                    move_to_list(big, big_tail, curr);
+
+                curr = curr->next;
+            }
+
+            if (big_tail)
+                big_tail->next = nullptr;
+
+            if (!small_tail)
+                return big;
+
+            small_tail->next = big;
+            return small;
+        }
+    };
 }
