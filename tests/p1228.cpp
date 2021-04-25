@@ -4,5 +4,8 @@
 
 TEST(p1228, t0)
 {
-    [[maybe_unused]] p1228::Solution s;
+    std::vector<int> arr = {1, 2, 4};
+    p1228::Solution s;
+    auto res = s.missingNumber(arr);
+    EXPECT_EQ(res, 3);
 }

@@ -4,5 +4,9 @@
 
 TEST(p377, t0)
 {
-    [[maybe_unused]] p377::Solution s;
+    p377::Solution s;
+
+    std::vector<int> nums = {1, 2, 3};
+    auto res = s.combinationSum4(nums, 4);
+    EXPECT_EQ(res, 7);
 }

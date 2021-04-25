@@ -4,5 +4,7 @@
 
 TEST(p696, t0)
 {
-    [[maybe_unused]] p696::Solution s;
+    p696::Solution s;
+    auto res = s.countBinarySubstrings("00110011");
+    EXPECT_EQ(res, 6);
 }
