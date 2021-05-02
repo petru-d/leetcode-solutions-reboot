@@ -43,6 +43,7 @@ namespace p1192
         }
 
       private:
+        // if we find a neighbor with a smaller rank than our discovery time, the edge to the neighbor needs to be discarded.
         int dfs(int node, int discoveryRank, std::unordered_map<int, std::vector<int>>& graph,
                 std::unordered_set<std::pair<int, int>, pair_hash>& kill_graph, std::vector<int>& rank)
         {

@@ -4,5 +4,8 @@
 
 TEST(p970, t0)
 {
-    [[maybe_unused]] p970::Solution s;
+    p970::Solution s;
+
+    auto res = s.powerfulIntegers(1, 1, 2);
+    EXPECT_EQ(res, (std::vector<int>{2}));
 }
