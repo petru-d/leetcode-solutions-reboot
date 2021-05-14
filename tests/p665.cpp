@@ -4,5 +4,8 @@
 
 TEST(p665, t0)
 {
-    [[maybe_unused]] p665::Solution s;
+    p665::Solution s;
+    std::vector<int> nums = {4, 2, 3};
+    auto res = s.checkPossibility(nums);
+    EXPECT_TRUE(res);
 }

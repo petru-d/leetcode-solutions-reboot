@@ -4,5 +4,13 @@
 
 TEST(p1564, t0)
 {
-    [[maybe_unused]] p1564::Solution s;
+    std::vector<int> boxes = {4, 3, 4, 1};
+    std::vector<int> warehouse = {5, 3, 3, 4, 1};
+    p1564::Solution s;
+    auto res = s.maxBoxesInWarehouse(boxes, warehouse);
+    EXPECT_EQ(res, 3);
+
+    p1564::Solution2 s2;
+    res = s2.maxBoxesInWarehouse(boxes, warehouse);
+    EXPECT_EQ(res, 3);
 }

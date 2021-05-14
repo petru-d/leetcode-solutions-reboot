@@ -30,4 +30,35 @@ namespace p204
             return int(std::count_if(sieve.begin(), sieve.end(), [](bool b) { return b; }));
         }
     };
+
+    class Solution2
+    {
+      public:
+        int countPrimes(int n)
+        {
+            std::array<uint8_t, 5000000> sieve = {};
+
+            // sieve[i] == 0 means i is prime;
+            sieve[0] = 1;
+            sieve[1] = 1;
+            int sqn = sqrt(n);
+            int p = 2;
+            while (p <= sqn)
+            {
+                if (sieve[p] == 1)
+                {
+                    ++p;
+                    continue;
+                }
+                auto pp = 2 * p;
+                while (pp < n)
+                {
+                    sieve[pp] = 1;
+                    pp += p;
+                }
+                ++p;
+            }
+            return std::count(sieve.begin(), sieve.begin() + size_t(n), 0);
+        }
+    };
 }

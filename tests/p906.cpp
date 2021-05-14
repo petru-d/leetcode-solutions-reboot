@@ -4,5 +4,7 @@
 
 TEST(p906, t0)
 {
-    [[maybe_unused]] p906::Solution s;
+    p906::Solution s;
+    auto res = s.superpalindromesInRange("4", "1000");
+    EXPECT_EQ(res, 4);
 }

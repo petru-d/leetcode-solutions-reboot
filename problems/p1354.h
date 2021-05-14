@@ -38,4 +38,53 @@ namespace p1354
             return false;
         }
     };
+
+    // sum  A
+    // sum  A + sum
+    // sum  A + 2*sum
+    // ...
+    // sum  A + k*sum
+    class Solution2
+    {
+      public:
+        bool isPossible(std::vector<int>& target)
+        {
+            if (target.size() == 1)
+                return target[0] == 1;
+
+            std::priority_queue<uint64_t> nums;
+            uint64_t total_sum = 0;
+            for (auto t : target)
+            {
+                nums.push(t);
+                total_sum += t;
+            }
+
+            while (true)
+            {
+                auto big = nums.top();
+                if (big == 1)
+                    return true;
+
+                auto rest_sum = total_sum - big;
+
+                if (big <= rest_sum)
+                    return false;
+
+                // replace big with big % rest_sum (basically do the substraction multiple times at once)
+                auto [q, new_big] = std::lldiv(big, rest_sum);
+
+                if (new_big == 0)
+                    new_big = rest_sum;
+
+                nums.pop();
+                nums.push(new_big);
+
+                total_sum = total_sum - big + new_big;
+            }
+
+            assert(false);
+            return false;
+        }
+    };
 }

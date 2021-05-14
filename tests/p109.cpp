@@ -10,10 +10,13 @@ TEST(p109, t0)
     auto* t9 = make_binary_tree(t5, 9, nullptr);
     auto* t0 = make_binary_tree(tm3, 0, t9);
 
-    p109::Solution s;
     std::vector<int> nums = {-10, -3, 0, 5, 9};
-    auto* res = s.sortedListToBST(make_list(nums));
 
-    bool eq = equal_trees(t0, res);
-    EXPECT_EQ(eq, true);
+    p109::Solution s;
+    auto* res = s.sortedListToBST(make_list(nums));
+    EXPECT_TRUE(equal_trees(t0, res));
+
+    p109::Solution2 s2;
+    auto* res2 = s2.sortedListToBST(make_list(nums));
+    EXPECT_TRUE(equal_trees(t0, res2));
 }

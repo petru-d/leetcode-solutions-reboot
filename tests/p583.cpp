@@ -4,5 +4,7 @@
 
 TEST(p583, t0)
 {
-    [[maybe_unused]] p583::Solution s;
+    p583::Solution s;
+    auto res = s.minDistance("sea", "eat");
+    EXPECT_EQ(res, 2);
 }
