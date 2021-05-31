@@ -4,5 +4,7 @@
 
 TEST(p709, t0)
 {
-    [[maybe_unused]] p709::Solution s;
+    p709::Solution s;
+    auto res = s.toLowerCase("A");
+    EXPECT_EQ(res, "a");
 }

@@ -4,5 +4,13 @@
 
 TEST(p943, t0)
 {
-    [[maybe_unused]] p943::Solution s;
+    std::vector<std::string> words = {"catg", "ctaagt", "gcta", "ttca", "atgcatc"};
+    p943::Solution s;
+    auto res = s.shortestSuperstring(words);
+
+    EXPECT_TRUE(res.size() == std::string("gctaagttcatgcatc").size());
+    for (const auto& w : words)
+    {
+        EXPECT_TRUE(res.find(w) != std::string::npos);
+    }
 }
