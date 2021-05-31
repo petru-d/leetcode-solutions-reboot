@@ -4,5 +4,8 @@
 
 TEST(p462, t0)
 {
-    [[maybe_unused]] p462::Solution s;
+    std::vector<int> nums = {1, 2, 3};
+    p462::Solution s;
+    auto res = s.minMoves2(nums);
+    EXPECT_EQ(res, 2);
 }

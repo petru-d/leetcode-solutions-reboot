@@ -4,5 +4,9 @@
 
 TEST(p1048, t0)
 {
-    [[maybe_unused]] p1048::Solution s;
+    std::vector<std::string> words = {"a", "b", "ba", "bca", "bda", "bdca"};
+
+    p1048::Solution s;
+    auto res = s.longestStrChain(words);
+    EXPECT_EQ(res, 4);
 }
