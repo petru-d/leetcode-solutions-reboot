@@ -4,5 +4,11 @@
 
 TEST(p890, t0)
 {
-    [[maybe_unused]] p890::Solution s;
+    std::vector<std::string> words = {"abc", "deq", "mee", "aqq", "dkd", "ccc"};
+
+    p890::Solution s;
+    auto res = s.findAndReplacePattern(words, "abb");
+    std::vector<std::string> exp = {"mee", "aqq"};
+
+    EXPECT_TRUE(std::is_permutation(res.begin(), res.end(), exp.begin(), exp.end()));
 }

@@ -4,5 +4,7 @@
 
 TEST(p52, t0)
 {
-    [[maybe_unused]] p52::Solution s;
+    p52::Solution s;
+    auto res = s.totalNQueens(4);
+    EXPECT_EQ(res, 2);
 }

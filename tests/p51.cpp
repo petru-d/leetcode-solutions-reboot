@@ -4,11 +4,13 @@
 
 TEST(p51, t0)
 {
-    p51::Solution s;
-
-    auto res = s.solveNQueens(4);
-
     std::vector<std::vector<std::string>> expected = {{".Q..", "...Q", "Q...", "..Q."}, {"..Q.", "Q...", "...Q", ".Q.."}};
 
-    EXPECT_EQ(res, expected);
+    p51::Solution s;
+    auto res = s.solveNQueens(4);
+    EXPECT_TRUE(std::is_permutation(res.begin(), res.end(), expected.begin(), expected.end()));
+
+    p51::Solution2 s2;
+    auto res2 = s2.solveNQueens(4);
+    EXPECT_TRUE(std::is_permutation(res2.begin(), res2.end(), expected.begin(), expected.end()));
 }

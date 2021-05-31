@@ -73,4 +73,68 @@ namespace p51
             return result;
         }
     };
+
+    class Solution2
+    {
+      public:
+        std::vector<std::vector<std::string>> solveNQueens(int n)
+        {
+            size_t N = size_t(n);
+
+            std::vector<size_t> curr;
+            std::vector<size_t> taken(N, 0);
+
+            go(N, curr, taken);
+
+            std::vector<std::vector<std::string>> res;
+            for (const auto& s : sol)
+            {
+                std::vector<std::string> curr;
+                curr.reserve(N);
+                for (auto i : s)
+                {
+                    std::string line;
+                    line.reserve(N);
+                    line.append(i, '.');
+                    line.append(1, 'Q');
+                    line.append(N - i - 1, '.');
+                    curr.push_back(std::move(line));
+                }
+                res.push_back(std::move(curr));
+            }
+
+            return res;
+        }
+
+        void go(size_t N, std::vector<size_t>& curr, std::vector<size_t>& taken)
+        {
+            if (curr.size() == N)
+            {
+                sol.push_back(curr);
+                return;
+            }
+
+            auto diag_conflict = [&](size_t Y) {
+                auto C = curr.size();
+                for (size_t i = 0; i < C; ++i)
+                    if (C - i == Y - curr[i] || C - i == curr[i] - Y)
+                        return true;
+
+                return false;
+            };
+
+            for (size_t i = 0; i < N; ++i)
+            {
+                if (taken[i] == 1 || diag_conflict(i))
+                    continue;
+                curr.push_back(i);
+                taken[i] = 1;
+                go(N, curr, taken);
+                curr.pop_back();
+                taken[i] = 0;
+            }
+        }
+
+        std::vector<std::vector<size_t>> sol;
+    };
 }
