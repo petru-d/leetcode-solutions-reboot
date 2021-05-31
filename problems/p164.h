@@ -74,4 +74,63 @@ namespace p164
             return max_gap;
         }
     };
+
+    class Solution2
+    {
+      public:
+        int maximumGap(std::vector<int>& nums)
+        {
+            auto N = nums.size();
+            if (N < 2)
+                return 0;
+
+            auto [minit, maxit] = std::minmax_element(nums.begin(), nums.end());
+
+            auto min = *minit;
+            auto max = *maxit;
+
+            if (min == max)
+                return 0;
+
+            auto bucket_size = std::max(size_t(1), (max - min) / N);
+
+            struct Bucket
+            {
+                int min = std::numeric_limits<int>::max();
+                int max = std::numeric_limits<int>::min();
+                void add(int n)
+                {
+                    min = std::min(min, n);
+                    max = std::max(max, n);
+                }
+                bool empty() const
+                {
+                    return min == std::numeric_limits<int>::max();
+                }
+            };
+
+            std::vector<Bucket> buckets(1 + (max - min) / bucket_size, Bucket{});
+
+            for (auto n : nums)
+            {
+                buckets[(n - min) / bucket_size].add(n);
+            }
+
+            int max_gap = std::numeric_limits<int>::min();
+            int prev_max = std::numeric_limits<int>::min();
+            for (const auto& b : buckets)
+            {
+                if (b.empty())
+                    continue;
+
+                if (prev_max != std::numeric_limits<int>::min())
+                    max_gap = std::max(max_gap, b.min - prev_max);
+                max_gap = std::max(max_gap, b.max - b.min);
+
+                prev_max = b.max;
+            }
+
+            return max_gap;
+        }
+    };
 }
