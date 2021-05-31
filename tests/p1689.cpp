@@ -4,5 +4,11 @@
 
 TEST(p1689, t0)
 {
-    [[maybe_unused]] p1689::Solution s;
+    p1689::Solution s;
+    auto res = s.minPartitions("32");
+    EXPECT_EQ(res, 3);
+
+    p1689::Solution2 s2;
+    auto res2 = s2.minPartitions("32");
+    EXPECT_EQ(res2, 3);
 }

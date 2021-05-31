@@ -4,5 +4,12 @@
 
 TEST(p318, t0)
 {
-    [[maybe_unused]] p318::Solution s;
+    std::vector<std::string> words = {"abcw", "baz", "foo", "bar", "xtfn", "abcdef"};
+    p318::Solution s;
+    auto res = s.maxProduct(words);
+    EXPECT_EQ(res, 16);
+
+    p318::Solution2 s2;
+    auto res2 = s2.maxProduct(words);
+    EXPECT_EQ(res2, 16);
 }
