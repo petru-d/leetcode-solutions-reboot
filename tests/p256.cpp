@@ -4,5 +4,8 @@
 
 TEST(p256, t0)
 {
-    [[maybe_unused]] p256::Solution s;
+    std::vector<std::vector<int>> costs{{17, 2, 17}, {16, 16, 5}, {14, 3, 19}};
+    p256::Solution s;
+    auto res = s.minCost(costs);
+    EXPECT_EQ(res, 10);
 }
