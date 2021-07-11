@@ -21,3 +21,13 @@ TEST(p746, t1)
 
     EXPECT_EQ(res, 6);
 }
+
+TEST(p746, t2)
+{
+    p746::Solution2 s2;
+
+    std::vector<int> cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+    auto res = s2.minCostClimbingStairs(cost);
+
+    EXPECT_EQ(res, 6);
+}

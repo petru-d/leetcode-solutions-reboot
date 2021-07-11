@@ -26,4 +26,23 @@ namespace p746
             return min_cost[N];
         }
     };
+
+    class Solution2
+    {
+      public:
+        int minCostClimbingStairs(std::vector<int>& cost)
+        {
+            auto N = cost.size();
+
+            std::vector<int> dp(N + 1);
+            dp[0] = dp[1] = 0;
+
+            for (size_t i = 2; i < N + 1; ++i)
+            {
+                dp[i] = std::min(cost[i - 2] + dp[i - 2], cost[i - 1] + dp[i - 1]);
+            }
+
+            return dp[N];
+        }
+    };
 }
